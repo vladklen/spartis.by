@@ -956,14 +956,29 @@ fieldset {
 	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
 	gap: 3px;
 	grid-auto-flow: dense;
-	perspective: 1000px;
-	transform-style: preserve-3d;
+	
 }
 .card__item{
 	position: relative;
 	height: 100%;
 	width: 100%;
+
+}
+.card__item,
+.horizontal,
+.vertical{
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.card,
+.long,
+.high{
 	transition: transform 0.2s;
+}
+.card{
+	height: 100%;
+	width: 100%;
 }
 .card__item H2{
 	position: absolute;
