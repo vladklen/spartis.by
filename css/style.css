@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Consolas;
+}
+.button{
+	position: relative;
+	display: inline-block;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 24px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.button {
+	color: black;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0.04em;
+	text-align: center;
+}
+
+.button__line{
+	position: absolute;
+	display: block;
+}
+.button__line_top{
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+
+.button:hover .button__line_top{
+	left: 0;
+	transition: 0.6s;
+	transition-delay: 0s;
+}
+.button__line_bottom{
+	bottom: 0px;
+	right: -100%;
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+
+.button:hover .button__line_bottom{
+	right: 0;
+	transition: 0.6s;
+	transition-delay: 0s;
+}
+.button__line_right{
+	bottom: 100%;
+	right: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: black;
+}
+
+.button:hover .button__line_right{
+	bottom: 0;
+	transition: 0.3s;
+	transition-delay: 0s;
+}
+.button__line_left{
+	top: 100%;
+	left: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: black;
+}
+
+.button:hover .button__line_left{
+	top: 0;
+	transition: 0.3s;
+	transition-delay: 0s;
+}
+
+.button:active .button__line_top{
+	top: 0px;
+	left: -100%;
+	transition: 0.1s;
+	transition-delay: 0s;
+}
+.button:active .button__line_bottom{
+	bottom: 0px;
+	right: -100%;
+	transition: 0.1s;
+	transition-delay: 0s;
+}
+.button:active .button__line_left{
+	top: 100%;
+	left: 0px;
+	transition: 0.1s;
+	transition-delay: 0s;
+}
+.button:active .button__line_right{
+	bottom: 100%;
+	right: 0px;
+	transition: 0.1s;
+	transition-delay: 0s;
+}
