@@ -784,7 +784,7 @@ fieldset {
 }
 
 
-/* ------------------Benfits------------------ */
+/* ------------------Benefits------------------ */
 .benefits{
 	display: flex;
 	flex-direction: column;
@@ -1048,18 +1048,76 @@ fieldset {
 /* *---------------OBJECT-2-------------------------------- */
 /* !---------------OBJECT-2-------------------------------- */
 .object__head {
+	padding: 0px 20px 10px 20px;
+	height: calc(100vh - 100px);
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0px 0px 50px 0px;
+}
+.object__head img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	object-fit: cover;
+	opacity: 0.3;
+	z-index: 1;
 }
 .object__title {
+	width: 100%;
+	z-index: 2;
 }
 .title {
+	width: 100%;
 }
 .object__subtitle {
+	z-index: 2;
 }
 .subtitle {
 }
 .object__content {
+	flex: 1 1 auto;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+}
+.object__content p{
+	color: black;
 }
 .object__photo {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+	grid-auto-rows: 1fr;
+	gap: 3px;
+	grid-auto-flow: dense;
 }
-.photo__item {
+.photo__item{
+	max-height: 294px;
+}
+.photo__item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media (max-width:768px){
+	.object__head{
+		height: calc(100% - 80px);
+	}
+	.photo__item{
+		max-height: calc(100vw/3);
+	}
+}
+@media (max-width:480px){
+	.object__head{
+		grid-template-columns: 1fr;
+		gap: 5px;
+		margin: 0 0 10px 0;
+	}
+	.photo__item {
+		width: 100%;
+		height: 180px;
+	}
 }
