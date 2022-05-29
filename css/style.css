@@ -950,42 +950,55 @@ fieldset {
 	margin: 30px 0px;
 }
 .objetcts {
+	
 }
 .objects__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
 	gap: 3px;
 	grid-auto-flow: dense;
-	
 }
 .card__item{
 	position: relative;
 	height: 100%;
 	width: 100%;
-
-}
-.card__item,
-.horizontal,
-.vertical{
-	perspective: 1000px;
-	transform-style: preserve-3d;
-}
-
-.card,
-.long,
-.high{
-	transition: transform 0.2s;
+	overflow: hidden;
 }
 .card{
 	height: 100%;
 	width: 100%;
 }
-.card__item H2{
+
+.card{
+	height: 100%;
+	width: 100%;
+}
+.card:hover .card__title{
+	transform: translate(0px,0%);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.card__image{
+	height: 100%;
+	width: 100%;
+}
+.card__title{
 	position: absolute;
+	height: 100%;
+	width: 100%;
 	color: white;
-	width: 150px;
-	bottom: 20px;
-	left: 20px;
+	top: 0px;
+	left: 0px;
+	transition: all 1s ease 0s;
+	transform: translate(0px,50%);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.vertical .card__title{
+	transform: translate(0px,75%);
+}
+.card__item H2,
+.card__item H3{
+	width: 180px;
+	padding: 20px;
 }
 .card__item img {
 	width: 100%;
@@ -1001,7 +1014,7 @@ fieldset {
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 9;
 }
 
 .horizontal {
@@ -1022,4 +1035,31 @@ fieldset {
 	.horizontal {
 		grid-column-start: span 1;
 	}
+	.vertical .card__title{
+		transform: translate(0px,50%);
+	}
+	.card__item H3{
+		font-size: 1.2rem;
+	}
+}
+
+
+/* !---------------OBJECT-2-------------------------------- */
+/* *---------------OBJECT-2-------------------------------- */
+/* !---------------OBJECT-2-------------------------------- */
+.object__head {
+}
+.object__title {
+}
+.title {
+}
+.object__subtitle {
+}
+.subtitle {
+}
+.object__content {
+}
+.object__photo {
+}
+.photo__item {
 }
