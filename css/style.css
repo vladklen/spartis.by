@@ -1292,12 +1292,16 @@ fieldset {
 .about__item {
 	position: relative;
 }
-.about-job{
+.about-job,
+.about-certificates{
 	text-align: center;
 }
 .about-job__content {
 	display: flex;
 	flex-direction: row;
+	position: relative;
+	padding: 30px 0px;
+	justify-content: center;
 	
 }
 .about-job__images {
@@ -1313,19 +1317,30 @@ fieldset {
 	position: relative;
 	height: 50%;
 	width: 100%;
+	z-index: 1;
 }
 .about-job__list {
 	flex: 1;
 	padding-left: 2rem;
+	z-index: 1;
+	
 }
-class="image_bg"
 .job__list {
 }
 .job__item {
 	display: list-item;
 	text-indent: 0;
+	color: white;
 }
 .about-job-bg {
+	position: absolute;
+	min-width: 1440px;
+	top: 0px;
+	left: 50%;
+	height: 100%;
+	background: url(../img/about/about-bg.jpg);
+	background-size: cover;
+	transform: translateX(-50%);
 }
 
 @media (max-width:768px){
@@ -1341,5 +1356,14 @@ class="image_bg"
 
 }
 @media (max-width:480px){
-
+ .about-job__content{
+	flex-direction: column;
+ }
+ .about-job__images{
+	flex-direction: row;
+	order: 1;
+}
+ .about-job__image{
+	 height:100px;
+ }
 }

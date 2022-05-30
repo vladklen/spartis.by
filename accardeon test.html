@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.accordian {
+			max-width: 1140px;
+			min-width: 320px;
+			height: 600px;
+			overflow: hidden;
+			margin: 100px auto;
+			border: 2px solid black;
+		}
+
+		.accordian ul {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 100%;
+		}
+
+		.accordian li {
+			position: relative;
+			display: block;
+			width: 160px;
+			height: 100%;
+			transition: all 0.5s;
+			box-sizing: border-box;
+		}
+
+		.accordian ul:hover li {
+			width: 40px;
+		}
+
+		.accordian ul li:hover {
+			flex: 1 1 auto;
+			background-color: yellow;
+		}
+
+
+
+		.image_title {
+			background: white;
+			border: 2px solid black;
+			border-bottom: 0px;
+			border-top: 0px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 40px;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.image_title a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			writing-mode: vertical-rl;
+			transform: rotate(180deg);
+			color: black;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 20px 10px;
+			box-sizing: border-box;
+		}
+
+		.accordian__slider {
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+
+		.accordian ul li:nth-child(1) .image_title {
+			border-left: none;
+		}
+
+		@media (max-width:480px) {
+			.accordian ul {
+				display: flex;
+				flex-direction: column;
+				height: 600px;
+			}
+
+			.image_title a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				font-size: 16px;
+				padding: 20px 10px;
+				box-sizing: border-box;
+				writing-mode: horizontal-tb;
+				transform: rotate(0deg);
+
+			}
+
+			.image_title {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 40px;
+				z-index: 1;
+				border: 2px solid black;
+				border-left: 0px;
+				border-right: 0px;
+			}
+
+			.accordian li {
+				width: 100%;
+				height: 100%;
+			}
+
+			.accordian ul:hover li {
+				width: 100%;
+				height: 40px;
+			}
+
+			.accordian ul li:nth-child(5) .image_title {
+				border-bottom: none;
+			}
+
+			.accordian ul li:nth-child(5):hover .image_title {
+				border-bottom: 2px solid black;
+			}
+
+			.accordian ul li:nth-child(1) .image_title {
+				border-top: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="accordian">
+		<ul>
+			<li>
+				<div class="image_title">
+					<a href="#">KungFu Panda</a>
+				</div>
+				<div class="accordian__slider">
+					<H2>Тут будет контент слайдера
+					</H2>
+				</div>
+			</li>
+			<li>
+				<div class="image_title">
+					<a href="#">Toy Story 2</a>
+				</div>
+				<div class="accordian__slider">
+					<H2>Тут будет контент слайдера</H2>
+				</div>
+			</li>
+			<li>
+				<div class="image_title">
+					<a href="#">Wall-E</a>
+				</div>
+				<div class="accordian__slider">
+					<H2>Тут будет контент слайдера</H2>
+				</div>
+			</li>
+			<li>
+				<div class="image_title">
+					<a href="#">Up</a>
+				</div>
+				<div class="accordian__slider">
+					<H2>Тут будет контент слайдера</H2>
+				</div>
+			</li>
+			<li>
+				<div class="image_title">
+					<a href="#">Cars 2</a>
+				</div>
+				<div class="accordian__slider">
+					<H2>Тут будет контент слайдера</H2>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
