@@ -67,13 +67,15 @@ h5{
 	letter-spacing: 0em;
 	display: inline-block;
 }
-p{
+p,
+.job__item{
 	font-size: calc(1rem + 4 * (100vw/1440));
 	font-weight: normal;
 	line-height: 1.5em;
 	letter-spacing: 0em;
 	display: inline-block;
 	color: rgb(92, 91, 91);
+	text-indent: 2rem;
 }
 
 
@@ -1145,7 +1147,8 @@ fieldset {
 	display: flex;
 	flex-direction: row;
 }
-.rent__info {
+.rent__info,
+.info {
 	width: 50%;
 	padding: 10px;
 }
@@ -1230,7 +1233,8 @@ fieldset {
 		flex-direction: column;
 		height: 100%;
 	}
-	.rent__info {
+	.rent__info,
+	.info {
 		width: 100%;
 	}
 	.rent__photos {
@@ -1263,4 +1267,79 @@ fieldset {
 	.tech-spec__table table{
 		margin: 0px 0px 0px -10px;
 	}
+}
+/* !-------------------ABOUT-------------------------------- */
+/* *-------------------ABOUT-------------------------------- */
+/* !-------------------ABOUT-------------------------------- */
+.about__title {
+}
+.title {
+}
+.about {
+	display: flex;
+	flex-direction: row;
+}
+.about__photos {
+	width: 50%;
+}
+.about__gallery {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 15px;
+}
+.about__item {
+	position: relative;
+}
+.about-job{
+	text-align: center;
+}
+.about-job__content {
+	display: flex;
+	flex-direction: row;
+	
+}
+.about-job__images {
+	flex: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 7px 0px;
+	position: relative;
+}
+.about-job__image{
+	position: relative;
+	height: 50%;
+	width: 100%;
+}
+.about-job__list {
+	flex: 1;
+	padding-left: 2rem;
+}
+class="image_bg"
+.job__list {
+}
+.job__item {
+	display: list-item;
+	text-indent: 0;
+}
+.about-job-bg {
+}
+
+@media (max-width:768px){
+	.about {
+		flex-direction: column;
+	}
+	.about__photos {
+		width: 100%;
+	}
+	.about__gallery{
+		height: 100px;
+	}
+
+}
+@media (max-width:480px){
+
 }
