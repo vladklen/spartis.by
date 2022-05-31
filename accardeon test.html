@@ -24,17 +24,20 @@
 		.accordian ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			width: 100%;
 			height: 100%;
 		}
 
+
 		.accordian li {
 			position: relative;
 			display: block;
-			width: 160px;
+			width: 100%;
 			height: 100%;
 			transition: all 0.5s;
 			box-sizing: border-box;
+			overflow: hidden;
 		}
 
 		.accordian ul:hover li {
@@ -43,7 +46,8 @@
 
 		.accordian ul li:hover {
 			flex: 1 1 auto;
-			background-color: yellow;
+			background: linear-gradient(232.37deg, #4B4B4B 21.52%, rgba(75, 75, 75, 0) 102.29%);
+			z-index: 1;
 		}
 
 
@@ -61,7 +65,7 @@
 			z-index: 1;
 		}
 
-		.image_title a {
+		.image_title h2 {
 			display: inline-block;
 			width: 100%;
 			height: 100%;
@@ -91,7 +95,7 @@
 				height: 600px;
 			}
 
-			.image_title a {
+			.image_title h2 {
 				display: inline-block;
 				width: 100%;
 				height: 100%;
@@ -146,43 +150,35 @@
 		<ul>
 			<li>
 				<div class="image_title">
-					<a href="#">KungFu Panda</a>
+					<h2>Аттестаты</h2>
 				</div>
 				<div class="accordian__slider">
-					<H2>Тут будет контент слайдера
-					</H2>
+					<h3>Тут будет контент слайдера
+					</h3>
 				</div>
 			</li>
 			<li>
 				<div class="image_title">
-					<a href="#">Toy Story 2</a>
+					<h2>Аттестаты</h2>
 				</div>
 				<div class="accordian__slider">
-					<H2>Тут будет контент слайдера</H2>
+					<H3>Тут будет контент слайдера</H3>
 				</div>
 			</li>
 			<li>
 				<div class="image_title">
-					<a href="#">Wall-E</a>
+					<h2>Аттестаты</h2>
 				</div>
 				<div class="accordian__slider">
-					<H2>Тут будет контент слайдера</H2>
+					<H3>Тут будет контент слайдера</H3>
 				</div>
 			</li>
 			<li>
 				<div class="image_title">
-					<a href="#">Up</a>
+					<h2>Аттестаты</h2>
 				</div>
 				<div class="accordian__slider">
-					<H2>Тут будет контент слайдера</H2>
-				</div>
-			</li>
-			<li>
-				<div class="image_title">
-					<a href="#">Cars 2</a>
-				</div>
-				<div class="accordian__slider">
-					<H2>Тут будет контент слайдера</H2>
+					<H3>Тут будет контент слайдера</H3>
 				</div>
 			</li>
 		</ul>
