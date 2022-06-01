@@ -844,8 +844,25 @@ fieldset {
 	font-size: 40px;
 	z-index: 2;
 	text-decoration: none;
-	transform: translate(-50%);
+	margin-left: -22px;
 	transition: all 0.5s ease 0s;
+	
+}
+._icon-arrow-down{
+	animation: down 1.5s infinite;
+}
+
+@keyframes down {
+	0% {
+		transform: translateY(0px);
+	}
+	20% {
+		transform: translateY(15px);
+		
+	}
+	40% {
+		transform: translateY(0px);
+	}
 }
 /* ------------------ABOUT US------------------ */
 .about{
