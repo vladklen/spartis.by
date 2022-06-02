@@ -139,7 +139,7 @@ h1{
 	text-align: left;
 }
 h2{
-	font-size: calc(1.25rem + 16 * (100vw/1440));
+	font-size: calc(1.25rem + 12 * (100vw/1440));
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: 0em;
@@ -387,10 +387,10 @@ fieldset {
 	}
 }
 /* *----------------------------header-------------------- */
-/* *header */
-/* *header */
-/* *header */
-/* !Header Button animation */
+/* *----------------------------header-------------------- */
+/* *----------------------------header-------------------- */
+
+/* !--------------------Header Button animation----------------- */
 .button__link,
 .header__tel-link{
 	display: inline-block;
@@ -405,9 +405,12 @@ fieldset {
 	letter-spacing: 0.04em;
 	text-align: center;
 }
+
+.footer__item:active,
 .button__link:active,
 .header__tel-link:active{
 	color: grey;
+	transform: translate(1px,1px);
 }
 .header__tel{
 	position: relative;
@@ -427,94 +430,33 @@ fieldset {
 	transition: 0.6s;
 	transition-delay: 0s;
 }
-.footer__link:active .button__line_bottom{
-	right: 100%;
-	transition: 0.6s;
-	transition-delay: 0s;
-}
 
 .button__line{
 	position: absolute;
 	display: block;
 }
-.button__line_top{
-	top: 0px;
-	left: -100%;
-	width: 100%;
-	height: 1px;
-	background-color: black;
-}
 
-.header__button:hover .button__line_top{
-	left: 0;
-	transition: 0.6s;
-	transition-delay: 0s;
-}
 .button__line_bottom{
 	bottom: 0px;
 	right: -100%;
 	width: 100%;
-	height: 1px;
+	height: 2px;
 	background-color: black;
 }
-
+.active .button__line_bottom,
 .header__button:hover .button__line_bottom{
 	right: 0;
-	transition: 0.6s;
+	transition: 0.5s;
 	transition-delay: 0s;
 }
-.button__line_right{
-	bottom: 100%;
-	right: 0px;
-	width: 1px;
-	height: 100%;
-	background-color: black;
-}
-
-.header__button:hover .button__line_right{
-	bottom: 0;
-	transition: 0.3s;
-	transition-delay: 0s;
-}
-.button__line_left{
-	top: 100%;
-	left: 0px;
-	width: 1px;
-	height: 100%;
-	background-color: black;
-}
-
-.header__button:hover .button__line_left{
-	top: 0;
-	transition: 0.3s;
-	transition-delay: 0s;
-}
-
-.header__button:active .button__line_top{
-	top: 0px;
-	left: -100%;
-	transition: 0.1s;
-	transition-delay: 0s;
-}
+.footer__link:active .button__line_bottom,
 .header__button:active .button__line_bottom{
-	bottom: 0px;
-	right: -100%;
-	transition: 0.1s;
+	background-color: grey;
+	transform: translate(4px,0px);
 	transition-delay: 0s;
 }
-.header__button:active .button__line_left{
-	top: 100%;
-	left: 0px;
-	transition: 0.1s;
-	transition-delay: 0s;
-}
-.header__button:active .button__line_right{
-	bottom: 100%;
-	right: 0px;
-	transition: 0.1s;
-	transition-delay: 0s;
-}
-/* !Header menu */
+
+/* !-----------------------------Header menu --------------------*/
 .header {
 	position: fixed;
 	width: 100%;
@@ -550,12 +492,12 @@ fieldset {
 	max-width: 100%;
 	overflow: hidden;
 	display: block;
+	transform: translate(-14px, 0px);
 }
 .header__burger {
 	display: none;
 }
 .header__menu {
-	overflow: hidden;
 }
 
 .header__list {
@@ -641,7 +583,6 @@ fieldset {
 		top: -100%;
 		left: 0px;
 		width: 100%;
-		height: 280px;
 		background-color: white;
 		padding: 80px 0px 0px 0px ;
 		box-shadow: 0px 4px 10px grey;
@@ -1196,10 +1137,10 @@ fieldset {
 }
 .object__head img{
 	position: absolute;
-	width: 100%;
+	min-width: 1440px;
+	left: 50%;
 	height: 100%;
-	top: 0px;
-	left: 0px;
+	transform: translateX(-50%);
 	object-fit: cover;
 	opacity: 0.3;
 	z-index: 1;
