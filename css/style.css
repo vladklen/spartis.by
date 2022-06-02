@@ -913,6 +913,10 @@ fieldset {
 	min-height: 400px;
 	margin: 50px 0 0 0;
 }
+.objects-slider__title,
+.objects-slider__subtitle{
+	text-align: center;
+}
 .main_slider-bg{
 	position: absolute;
 	min-width: 1440px;
