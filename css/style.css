@@ -769,9 +769,21 @@ fieldset {
 	opacity: 0;
 	transition: all 0.8s ease 0s;
 }
-.main__title._active-anim{
+.main__title._animation{
 	transform: translate(0px, 0px);
 	opacity: 1;
+}
+
+.main__subtitle{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.main__subtitle._animation{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0.4s;
 }
 
 
@@ -864,6 +876,26 @@ fieldset {
 	width: 2%;
 	background-color: white;
 }
+.image__devider .devider:nth-child(1){
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.image__devider .devider:nth-child(2){
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.image__devider .devider._animation:nth-child(1){
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.image__devider .devider._animation:nth-child(2){
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0.2s;
+}
+
 
 
 /* ------------------Benefits------------------ */
@@ -893,6 +925,39 @@ fieldset {
 	padding: 20px 20px;
 	gap: 20px;
 }
+.benefits__card .card__icon{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.benefits__card .card__title{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.benefits__card .card__subtitle{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.benefits__card .card__icon._animation{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0s;
+}
+.benefits__card .card__title._animation{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0.4s;
+}
+.benefits__card .card__subtitle._animation{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.8s ease 0.8s;
+}
+
+
+
 .card__icon::before{
 	font-size: 40px;
 	color: white;

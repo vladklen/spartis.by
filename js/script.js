@@ -3,8 +3,8 @@ const menyBurger = document.querySelector(".header__menu");
 const bodyLock = document.querySelector("body");
 
 burger.onclick = function () {
-	burger.classList.toggle("active-anim");
-	menyBurger.classList.toggle("active-anim");
+	burger.classList.toggle("active");
+	menyBurger.classList.toggle("active");
 	bodyLock.classList.toggle("lock");
 }
 
@@ -14,7 +14,7 @@ const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
-	function animOnScroll(params) {
+	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
 			const animItemHeight = animItem.offsetHeight;
@@ -22,16 +22,15 @@ if (animItems.length > 0) {
 			const animStart = 4;
 
 			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-
 			if (animItemHeight > window.innerHeight) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
 
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItem)) {
-				animItem.classList.add('_active-anim');
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('_animation');
 			} else {
 				if (!animItem.classList.contains('_anim-stop')) {
-					animItem.classList.remove('_active-anim');
+					animItem.classList.remove('_animation')
 				}
 			}
 		}
