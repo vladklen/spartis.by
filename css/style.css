@@ -178,7 +178,7 @@ p,
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 820px){
 	h1{
 		font-size: calc(1.875rem + 22 * ((100vw - 320px)/1440));
 	}
@@ -232,7 +232,7 @@ p,
 .black-button:active{
 	box-shadow: inset 0px 0px 10px grey;
 }
-@media (max-width: 767px){
+@media (max-width: 820px){
 	.black-button,
 	.white-button {
 		font-size:1rem;
@@ -381,7 +381,7 @@ fieldset {
 	color: black;
 	text-decoration: none;
 }
-@media (max-width: 767px){
+@media (max-width: 820px){
 	.modal__body{
 		padding: 10px 10px;
 	}
@@ -443,7 +443,7 @@ fieldset {
 	height: 2px;
 	background-color: black;
 }
-.active .button__line_bottom,
+._active-page .button__line_bottom,
 .header__button:hover .button__line_bottom{
 	right: 0;
 	transition: 0.5s;
@@ -544,7 +544,7 @@ fieldset {
 .header__burger.active span{
 	transform: scale(0);
 }
-@media (max-width:768px){
+@media (max-width:820px){
 	.header__burger{
 		display: block;
 		position: relative;
@@ -602,7 +602,7 @@ fieldset {
 	}
 	.header__list li{
 		margin: 0px auto;
-		width: 50%;
+		width: 25%;
 		text-align: center;
 	}
 	body.lock{
@@ -700,7 +700,7 @@ fieldset {
 	letter-spacing: 0.02em;
 	margin-bottom: 10px;
 }
-@media (max-width:768px){
+@media (max-width:820px){
 	.footer__list{
 		flex-wrap: wrap;
 		justify-content: center;
@@ -1027,6 +1027,20 @@ fieldset {
 	text-align: center;
 	margin: 0px;
 }
+.feedback__title._animation{
+	animation: 4s ease grow-animation ;
+}
+@keyframes grow-animation{
+	0% {
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.15);
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
 .feedback__content .title{
 	margin: 0px;
 }
@@ -1037,7 +1051,7 @@ fieldset {
 
 
 
-@media (max-width:768px){
+@media (max-width:820px){
 	.main {
 		margin-top: 60px;
 	}
@@ -1088,7 +1102,7 @@ fieldset {
 
 @media (max-width:480px){
 	.main__head-image{
-		height: 500px;
+		height: 630px;
 	}
 	.main__head-title{
 		width: 100%;
@@ -1261,7 +1275,7 @@ fieldset {
 	height: 100%;
 	object-fit: cover;
 }
-@media (max-width:768px){
+@media (max-width:820px){
 	.object__head{
 		height: calc(100% - 80px);
 	}
@@ -1372,7 +1386,7 @@ fieldset {
 }
 
 
-@media (max-width:768px){
+@media (max-width:820px){
 	.rent {
 		display: flex;
 		flex-direction: column;
@@ -1488,7 +1502,7 @@ fieldset {
 	transform: translateX(-50%);
 }
 
-@media (max-width:768px){
+@media (max-width:820px){
 	.about {
 		flex-direction: column;
 	}
