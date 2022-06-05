@@ -764,6 +764,17 @@ fieldset {
 	gap: 1em;
 }
 
+.main__title{
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.main__title._active-anim{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+
 
 .main__image img{
 	position: absolute;

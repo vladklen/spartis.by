@@ -3,8 +3,8 @@ const menyBurger = document.querySelector(".header__menu");
 const bodyLock = document.querySelector("body");
 
 burger.onclick = function () {
-	burger.classList.toggle("active");
-	menyBurger.classList.toggle("active");
+	burger.classList.toggle("active-anim");
+	menyBurger.classList.toggle("active-anim");
 	bodyLock.classList.toggle("lock");
 }
 
@@ -28,10 +28,10 @@ if (animItems.length > 0) {
 			}
 
 			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItem)) {
-				animItem.classList.add('_active');
+				animItem.classList.add('_active-anim');
 			} else {
 				if (!animItem.classList.contains('_anim-stop')) {
-					animItem.classList.remove('_active');
+					animItem.classList.remove('_active-anim');
 				}
 			}
 		}
