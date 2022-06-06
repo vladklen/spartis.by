@@ -481,7 +481,7 @@ fieldset {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 100px;
+	min-height: 100px;
 	align-items: center;
 }
 .header__logo {
@@ -584,7 +584,7 @@ fieldset {
 		left: 0px;
 		width: 100%;
 		background-color: white;
-		padding: 80px 0px 0px 0px ;
+		padding: 70px 0px 10px 0px ;
 		box-shadow: 0px 4px 10px grey;
 		transition: all 0.3s ease 0s;
 	}
@@ -592,7 +592,7 @@ fieldset {
 		top:0px;
 	}
 	.header__body{
-		height: 60px;
+		min-height: 60px;
 	}
 	.header__logo{
 		flex: 0 0 230px;
@@ -602,11 +602,14 @@ fieldset {
 	}
 	.header__list li{
 		margin: 0px auto;
-		width: 25%;
+		max-width: 125px;
 		text-align: center;
 	}
 	body.lock{
 		overflow: hidden;
+	}
+	.header__tel-link{
+		font-size: 0.9rem;
 	}
 }
 @media (max-width:480px){
@@ -719,6 +722,9 @@ fieldset {
 }
 .social__list{
 	justify-content: space-evenly;
+}
+.footer__body{
+	padding: 0px;
 }
 .footer__body > * {
 	margin: 0 0 20px 0
@@ -879,12 +885,12 @@ fieldset {
 .image__devider .devider:nth-child(1){
 	transform: translate(0px, 120%);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 .image__devider .devider:nth-child(2){
 	transform: translate(0px, 120%);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 .image__devider .devider._animation:nth-child(1){
 	transform: translate(0px, 0px);
@@ -893,7 +899,7 @@ fieldset {
 .image__devider .devider._animation:nth-child(2){
 	transform: translate(0px, 0px);
 	opacity: 1;
-	transition: all 0.8s ease 0.2s;
+	transition: all 0.4s ease 0.2s;
 }
 
 
@@ -1026,6 +1032,11 @@ fieldset {
 .feedback__title{
 	text-align: center;
 	margin: 0px;
+	padding: 0px 10px;
+}
+.feedback__subtitle{
+	text-align: center;
+	padding: 0px 10px;
 }
 .feedback__title._animation{
 	animation: 4s ease grow-animation ;
@@ -1035,7 +1046,7 @@ fieldset {
 		transform: scale(1.0);
 	}
 	50%{
-		transform: scale(1.15);
+		transform: scale(1.1);
 	}
 	100%{
 		transform: scale(1.0);
@@ -1047,6 +1058,7 @@ fieldset {
 .feedback__subtitle p{
 	color: white;
 	text-align: center;
+	text-indent: 0px;
 }
 
 
