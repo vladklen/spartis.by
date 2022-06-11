@@ -1114,7 +1114,6 @@ fieldset {
 
 @media (max-width:480px){
 	.main__head-image{
-		height: 630px;
 	}
 	.main__head-title{
 		width: 100%;
