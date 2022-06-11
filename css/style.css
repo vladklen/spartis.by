@@ -1067,6 +1067,9 @@ fieldset {
 	.main {
 		margin-top: 60px;
 	}
+	.main__head-image{
+		margin-top: -60px;
+	}
 	.main__image{
 		position: absolute;
 		top: 0;
@@ -1113,8 +1116,6 @@ fieldset {
 }
 
 @media (max-width:480px){
-	.main__head-image{
-	}
 	.main__head-title{
 		width: 100%;
 	}
