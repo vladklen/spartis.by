@@ -2049,7 +2049,7 @@ fieldset {
 
 
 .info__email:hover::before{
-	content: "\e908";
+	content: "\e90b";
 	transition: background-color 1s linear;
 }
 @keyframes shake {
