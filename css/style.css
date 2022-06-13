@@ -392,7 +392,8 @@ fieldset {
 
 /* !--------------------Header Button animation----------------- */
 .button__link,
-.header__tel-link{
+.header__tel-link,
+.info__email a{
 	display: inline-block;
 	padding: 10px 10px;
 	text-transform: uppercase;
@@ -1141,7 +1142,7 @@ fieldset {
 }
 .reviews__content > .review,
 .objects__cards > .card__item{
-	transform: translate(0px, -550%);
+	transform: translate(0px, -650%);
    transition: all 0.8s ease 0s;
 }
 .reviews__content._animation .review:nth-child(14){
@@ -1987,3 +1988,42 @@ fieldset {
 	}
 	
 }
+/* !-------------------CONTCATS------------------------------- */
+/* *-------------------CONTACTS------------------------------ */
+/* !-------------------CONTACTS------------------------------ */
+.contacts{
+	position: relative;
+}
+
+.contacts__info{
+	display: flex;
+	flex-direction: column;
+	max-width: 360px;
+	gap: 10px;
+	position: absolute;
+	height: 60%;
+	top: 50%;
+	right: 50px;
+	justify-content: space-around;
+	transform: translate(0px,-50%);
+}
+
+.info__title,
+.info__contacts{
+	background-color: #fff;
+	padding:10px;
+	border: 1px solid black;
+}
+.contacts__info .feedback__button a{
+	width: 100%;
+}
+.info__contacts{
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+
