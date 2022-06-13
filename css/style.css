@@ -705,6 +705,9 @@ fieldset {
 	letter-spacing: 0.02em;
 	margin-bottom: 10px;
 }
+.copyright p{
+	text-indent: 0px;
+}
 @media (max-width:820px){
 	.footer__list{
 		flex-wrap: wrap;
