@@ -1146,7 +1146,7 @@ fieldset {
 }
 .reviews__content > .review,
 .objects__cards > .card__item{
-	transform: translate(0px, -650%);
+	transform: translate(0px, -750%);
    transition: all 0.8s ease 0s;
 }
 .reviews__content._animation .review:nth-child(14){
