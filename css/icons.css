@@ -25,7 +25,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+._icon-mail:before {
+	content: "\e90a";
+ }
 ._icon-arrow-down:before {
   content: "\e900";
 }
@@ -56,3 +58,4 @@
 ._icon-close:before {
 	content: "\e909";
  }
+ 
