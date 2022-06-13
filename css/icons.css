@@ -25,7 +25,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-._icon-arrow-down:before {
+._icon-mail-open:before {
+	content: "\e90b";
+ }
+ ._icon-mail:before {
+	content: "\e90a";
+ }
+ ._icon-close:before {
+	content: "\e909";
+ }
+ ._icon-arrow-down:before {
 	content: "\e900";
  }
  ._icon-arrow-left:before {
@@ -37,30 +46,18 @@
  ._icon-check:before {
 	content: "\e903";
  }
- ._icon-close:before {
+ ._icon-instagram:before {
 	content: "\e904";
  }
- ._icon-instagram:before {
+ ._icon-phone:before {
 	content: "\e905";
  }
- ._icon-location:before {
+ ._icon-telegram:before {
 	content: "\e906";
  }
- ._icon-mail:before {
+ ._icon-viber:before {
 	content: "\e907";
  }
- ._icon-mail-open:before {
-	content: "\e908";
- }
- ._icon-phone:before {
-	content: "\e909";
- }
- ._icon-telegram:before {
-	content: "\e90a";
- }
- ._icon-viber:before {
-	content: "\e90b";
- }
  ._icon-whatsapp:before {
-	content: "\e90c";
+	content: "\e908";
  }
