@@ -2037,8 +2037,23 @@ fieldset {
 .info__email a{
 	text-transform: none;
 }
-.info__telephone:hover{
-	color: grey;
+.info__telephone:hover::before,
+.header__tel:hover::before{
+	display: inline-block;
+	animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both infinite;
+	transform-origin:50% 50%;
+
+}
+@keyframes shake {
+	0% { transform: rotate(0); }
+	15% { transform: rotate(8deg); }
+	30% { transform: rotate(-8deg); }
+	45% { transform: rotate(4deg); }
+	60% { transform: rotate(-6deg); }
+	75% { transform: rotate(3deg); }
+	85% { transform: rotate(-3deg); }
+	92% { transform: rotate(1deg); }
+	100% { transform: rotate(0); }
 }
 
 @media (max-width:820px) {
