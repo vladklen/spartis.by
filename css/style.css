@@ -2001,7 +2001,7 @@ fieldset {
 
 .contacts__map{
 	max-width: 1140px;
-	height: calc(100vh - 480px);
+	height: calc(100vh - 280px);
 	min-height: 380px;
 }
 
