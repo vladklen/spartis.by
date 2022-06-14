@@ -494,7 +494,6 @@ fieldset {
 	max-width: 100%;
 	overflow: hidden;
 	display: block;
-	transform: translate(-14px, 0px);
 }
 .header__burger {
 	display: none;
