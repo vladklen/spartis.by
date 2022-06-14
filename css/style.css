@@ -1146,7 +1146,7 @@ fieldset {
 .reviews__content > .review,
 .objects__cards > .card__item{
 	transform: translate(0px, -750%);
-   transition: all 0.8s ease 0s;
+   transition: all 0.2s ease 0s;
 }
 .reviews__content._animation .review:nth-child(14){
 	transform: translate(0px, 0px);
@@ -1976,7 +1976,7 @@ fieldset {
 	border: 1px solid black;
 	padding: 10px;
 	position: relative;
-	transition: all 0.5s;
+	transition: all 0.3s ease 0s;
 	overflow: hidden;
 	background-color: white;
 }
@@ -1987,11 +1987,13 @@ fieldset {
 	top: 0px;
 	left: 0px;
 }
-.review:hover{
+.main .container .reviews__content .review:hover{
 	transform: scale(1.05);
 	z-index: 1;
+	transition: all ease 0.3s;
 	box-shadow: 0px 0px 10px black;
 }
+
 .review__logo img{
 	max-width: 100%;
 	height: auto;
