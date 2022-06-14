@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/png" href="/img/favicon.png">
 	<link rel="stylesheet" href="css/icons.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>SPARTIS LLC</title>
+	<title>Контакты</title>
 </head>
 
 <body>
@@ -76,7 +76,8 @@
 				</div>
 				<div class="contacts">
 					<div class="contacts__map">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A565fa1b7700498ab2b268155b0ad53545bae03f371381dd57ebd8fc4af95b4fd&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+						<script type="text/javascript" charset="utf-8" async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A565fa1b7700498ab2b268155b0ad53545bae03f371381dd57ebd8fc4af95b4fd&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
 					</div>
 					<div class="contacts__info">
 						<div class="info__title">
@@ -107,23 +108,23 @@
 					<nav class="footer__menu">
 						<ul class="footer__list">
 							<li class="footer__link">
-								<a class="footer__item" href="#">Услуги</a>
+								<a class="footer__item" href="about.html">Услуги</a>
 								<span class="button__line button__line_bottom"></span>
 							</li>
 							<li class="footer__link">
-								<a class="footer__item" href="#">Аренда</a>
+								<a class="footer__item" href="rent.html">Аренда</a>
 								<span class="button__line button__line_bottom"></span>
 							</li>
 							<li class="footer__link">
-								<a class="footer__item" href="#">Объекты</a>
+								<a class="footer__item" href="objects.html">Объекты</a>
 								<span class="button__line button__line_bottom"></span>
 							</li>
 							<li class="footer__link">
-								<a class="footer__item" href="#">Отзывы</a>
+								<a class="footer__item" href="reviews.html">Отзывы</a>
 								<span class="button__line button__line_bottom"></span>
 							</li>
 							<li class="footer__link">
-								<a class="footer__item" href="#">Контакты</a>
+								<a class="footer__item" href="contacts.html">Контакты</a>
 								<span class="button__line button__line_bottom"></span>
 							</li>
 						</ul>
@@ -131,7 +132,8 @@
 					<div class="footer__social">
 						<ul class="social__list">
 							<li class="social__link">
-								<a <a href="viber://chat?number=%2B375296760205" class=" social__item _icon-viber" target="_blank"></a>
+								<a <a href="viber://chat?number=%2B375296760205" class=" social__item _icon-viber"
+									target="_blank"></a>
 							</li>
 							<li class="social__link">
 								<a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
@@ -140,7 +142,8 @@
 								<a href="https://wa.me/375296760205" class="social__item _icon-whatsapp" target="_blank"></a>
 							</li>
 							<li class="social__link">
-								<a href="https://www.instagram.com/vladklen/" target="_blank" class="social__item _icon-instagram"></a>
+								<a href="https://www.instagram.com/vladklen/" target="_blank"
+									class="social__item _icon-instagram"></a>
 							</li>
 						</ul>
 					</div>
@@ -150,6 +153,58 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Модальное окно -->
+		<div id="popup" class="modal">
+			<a href="#header" class="modal__area"></a>
+			<div class="modal__body">
+				<div class="modal__content">
+					<a href="#header" class="modal__close _icon-close"></a>
+					<form class="feedback__form">
+						<fieldset>
+							<div class="form__body">
+								<div class="form__header">
+									<h2>Заявка на расчет стоимости</h2>
+								</div>
+								<div class="form-item">
+									<div class="form-item__el">
+										<input id="username" name="username" placeholder="Ваше имя или Организация" type="text"
+											class="form-item__input-area" required>
+									</div>
+								</div>
+								<div class="form-item">
+									<div class="form-item__el">
+										<input id="mail" name="mail" placeholder="Ваша электронная почта" type="email"
+											class="form-item__input-area" pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required>
+									</div>
+								</div>
+								<div class="form-item">
+									<div class="form-item__el">
+										<input id="tel" name="tel" placeholder="Номер телефона +375(29)1111111" type="tel"
+											class="form-item__input-area" pattern="+375[0-9]{9}" required>
+									</div>
+								</div>
+								<div class="form-item">
+									<div class="form-item__el">
+										<textarea placeholder="Текст Сообщения" id="textarea" name="textarea"
+											class="form-item__text-area"
+											style="resize: none; min-height: 140px; max-height: 140px;"></textarea>
+									</div>
+								</div>
+								<p>
+									Пришлите нам запрос и мы свяжемся с Вами в ближайшее время. Вы также можете набрать нам по
+									телефону <br> +375 (29) 676-72-09
+								</p>
+								<div class="form-item">
+									<div class="form-item__button">
+										<button id="accept" name="accept" class="black-button">Оставить заявку</button>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/script.js"></script>
 </body>

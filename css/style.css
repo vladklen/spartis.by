@@ -494,7 +494,6 @@ fieldset {
 	max-width: 100%;
 	overflow: hidden;
 	display: block;
-	transform: translate(-14px, 0px);
 }
 .header__burger {
 	display: none;
@@ -704,6 +703,9 @@ fieldset {
 	line-height: 18px;
 	letter-spacing: 0.02em;
 	margin-bottom: 10px;
+}
+.copyright p{
+	text-indent: 0px;
 }
 @media (max-width:820px){
 	.footer__list{
@@ -1143,7 +1145,7 @@ fieldset {
 }
 .reviews__content > .review,
 .objects__cards > .card__item{
-	transform: translate(0px, -650%);
+	transform: translate(0px, -750%);
    transition: all 0.8s ease 0s;
 }
 .reviews__content._animation .review:nth-child(14){
@@ -2018,7 +2020,8 @@ fieldset {
 
 .contacts__map{
 	max-width: 1140px;
-	height: calc(100vh - 480px);
+	height: calc(100vh - 280px);
+	min-height: 380px;
 }
 
 .contacts__info{
@@ -2057,8 +2060,26 @@ fieldset {
 .info__email a{
 	text-transform: none;
 }
-.info__telephone:hover{
-	color: grey;
+.info__telephone:hover::before,
+.header__tel:hover::before{
+	display: inline-block;
+	animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both infinite;
+	transform-origin:50% 50%;
+}
+
+.info__email:hover::before{
+	content: "\e90b";
+}
+@keyframes shake {
+	0% { transform: rotate(0); }
+	15% { transform: rotate(8deg); }
+	30% { transform: rotate(-8deg); }
+	45% { transform: rotate(4deg); }
+	60% { transform: rotate(-6deg); }
+	75% { transform: rotate(3deg); }
+	85% { transform: rotate(-3deg); }
+	92% { transform: rotate(1deg); }
+	100% { transform: rotate(0); }
 }
 
 @media (max-width:820px) {
