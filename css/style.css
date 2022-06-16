@@ -1146,7 +1146,7 @@ fieldset {
 .reviews__content > .review,
 .objects__cards > .card__item{
 	transform: translate(0px, -750%);
-   transition: all 0.8s ease 0s;
+   transition: all 0.2s ease 0s;
 }
 .reviews__content._animation .review:nth-child(14){
 	transform: translate(0px, 0px);
@@ -1265,7 +1265,7 @@ fieldset {
 }
 .card__item H2,
 .card__item H3{
-	width: 150px;
+	width: 160px;
 	padding: 20px;
 }
 .card__item img {
@@ -1355,9 +1355,10 @@ fieldset {
 /* !---------------OBJECT-2-------------------------------- */
 .object__head {
 	padding: 0px 20px 10px 20px;
-	height: calc(100vh - 100px);
+	min-height: calc(100vh - 100px);
 	display: flex;
 	position: relative;
+	gap: 20px;
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 0px 0px 50px 0px;
@@ -1396,24 +1397,44 @@ fieldset {
 .object__photo {
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
-	grid-auto-rows: 1fr;
+	grid-auto-rows: 294px;
 	gap: 3px;
 	grid-auto-flow: dense;
 }
 .photo__item{
-	max-height: 294px;
 }
 .photo__item img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+.object__head>*{
+	transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+	
+}
+.object__head._animation div:nth-child(2){
+	transform: translate(0px, 0px);
+   opacity: 1;
+   transition: all 1s ease 0.2s;
+}
+.object__head._animation div:nth-child(3){
+	transform: translate(0px, 0px);
+   opacity: 1;
+   transition: all 1s ease 0.4s;
+}
+.object__head._animation div:nth-child(4){
+	transform: translate(0px, 0px);
+   opacity: 1;
+   transition: all 1s ease 0.6s;
+}
 @media (max-width:820px){
 	.object__head{
 		height: calc(100% - 80px);
 	}
-	.photo__item{
-		max-height: calc(100vw/3);
+	.object__photo{
+		grid-auto-rows: calc(100vw/3);
 	}
 }
 @media (max-width:480px){
@@ -1422,10 +1443,10 @@ fieldset {
 		gap: 5px;
 		margin: 0 0 10px 0;
 	}
-	.photo__item {
-		width: 100%;
-		height: 180px;
+	.object__photo{
+		grid-auto-rows: 180px;
 	}
+
 }
 
 /* !-------------------RENT-------------------------------- */
@@ -1955,7 +1976,7 @@ fieldset {
 	border: 1px solid black;
 	padding: 10px;
 	position: relative;
-	transition: all 0.5s;
+	transition: all 0.3s ease 0s;
 	overflow: hidden;
 	background-color: white;
 }
@@ -1966,11 +1987,21 @@ fieldset {
 	top: 0px;
 	left: 0px;
 }
-.review:hover{
-	transform: scale(1.05);
+.main .container .reviews__content .review:hover{
 	z-index: 1;
-	box-shadow: 0px 0px 10px black;
+	animation: 0.4s ease grow forwards ;
 }
+@keyframes grow {
+	0% {
+		transform: scale(1.0);
+	}
+	100%{
+		transform: scale(1.02);
+		box-shadow: 0px 0px 10px black;
+	}
+	
+}
+
 .review__logo img{
 	max-width: 100%;
 	height: auto;
