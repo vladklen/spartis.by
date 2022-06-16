@@ -1365,7 +1365,6 @@ fieldset {
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 0px 0px 50px 0px;
-	overflow: hidden;
 }
 .object__head img{
 	position: absolute;
@@ -1376,6 +1375,7 @@ fieldset {
 	object-fit: cover;
 	opacity: 0.3;
 	z-index: 1;
+	overflow: hidden;
 }
 .object__title {
 	width: 100%;
@@ -1386,8 +1386,6 @@ fieldset {
 }
 .object__subtitle {
 	z-index: 2;
-}
-.subtitle {
 }
 .object__content {
 	flex: 1 1 auto;
@@ -1404,6 +1402,7 @@ fieldset {
 	grid-auto-rows: 294px;
 	gap: 3px;
 	grid-auto-flow: dense;
+	overflow: hidden;
 }
 .photo__item{
 }
