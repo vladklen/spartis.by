@@ -125,6 +125,7 @@ a{
 	margin: 0 auto;
 	height: 100%;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .title,
 .subtitle{
@@ -1136,6 +1137,9 @@ fieldset {
 	width: 200px;
 	margin: 30px 0px;
 }
+.objetcts{
+	overflow: hidden;
+}
 .objects__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
@@ -1362,6 +1366,7 @@ fieldset {
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 0px 0px 50px 0px;
+	overflow: hidden;
 }
 .object__head img{
 	position: absolute;
