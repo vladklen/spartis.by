@@ -125,7 +125,6 @@ a{
 	margin: 0 auto;
 	height: 100%;
 	box-sizing: border-box;
-	overflow: hidden;
 }
 .title,
 .subtitle{
