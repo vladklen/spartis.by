@@ -1509,6 +1509,7 @@ fieldset {
 	overflow: hidden;
 }
 .photo__item{
+	background-color: rgba(128, 128, 128, 0.5);
 }
 .photo__item img {
 	width: 100%;
