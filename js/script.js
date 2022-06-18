@@ -1,3 +1,13 @@
+// Preloader
+window.onload = function () {
+	document.body.classList.add('loaded_hiding');
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	}, 500);
+}
+
+// Burger
 const burger = document.querySelector(".header__burger");
 const menyBurger = document.querySelector(".header__menu");
 const bodyLock = document.querySelector("body");
