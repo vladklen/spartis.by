@@ -2239,12 +2239,14 @@ fieldset {
 	color: #fff;
 	text-align: center;
 	position: relative;
+	
  }
 
 .my-slide img {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	object-fit: cover;
 }
 .my-slide a {
 	position: absolute;
