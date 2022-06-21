@@ -55,6 +55,9 @@ if (animItems.length > 0) {
 		animOnScroll();
 	}, 300);
 }
+// для галлереи
+
+
 
 
 // JQuerry
@@ -62,11 +65,6 @@ jQuery(function ($) {
 	if ($) {
 		console.log("jQuery start");
 	}
-	$(function () {
-		$("#accordion").accordion({
-			collapsible: true
-		});
-	});
 
 	if ($(".main__slider").length > 0) {
 		$('.main__slider').slick({
@@ -104,9 +102,6 @@ jQuery(function ($) {
 						arrows: true,
 					}
 				}
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
 			]
 		});
 	}
