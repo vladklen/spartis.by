@@ -62,6 +62,9 @@ jQuery(function ($) {
 	if ($) {
 		console.log("jQuery start");
 	}
+	if ($(".about__slider").length > 0) {
+		$('.about__slider').slick();
+	}
 
 	if ($(".main__slider").length > 0) {
 		$('.main__slider').slick({
@@ -105,4 +108,20 @@ jQuery(function ($) {
 			]
 		});
 	}
+	$(function () {
+		var icons = {
+			header: "ui-icon-circle-arrow-e",
+			activeHeader: "ui-icon-circle-arrow-s"
+		};
+		$("#accordion").accordion({
+			icons: icons
+		});
+		$("#toggle").button().on("click", function () {
+			if ($("#accordion").accordion("option", "icons")) {
+				$("#accordion").accordion("option", "icons", null);
+			} else {
+				$("#accordion").accordion("option", "icons", icons);
+			}
+		});
+	});
 });
