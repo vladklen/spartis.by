@@ -2252,7 +2252,7 @@ fieldset {
 	margin: 0 auto;
 	object-fit: cover;
 }
-.my-slide a {
+.main__slider .my-slide a {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
@@ -2262,7 +2262,8 @@ fieldset {
 	z-index: 2;
 }
 
-.main__slider {
+.main__slider,
+.about__slider {
 	width: 100%;
 	padding: 20px 0;
 	position: relative;
@@ -2298,7 +2299,7 @@ fieldset {
 	width: 100%;
 }
 /* Слайд */
-.slick-slide{
+.main__slider .slick-slide{
 	max-width: 360px;
 }
 /* Слайд активный (показывается) */
@@ -2358,49 +2359,17 @@ fieldset {
 	background-color: white;
 }
 /*                                 About sliders                           */
-.about__slider{
-	height: 100%;
-}
-.about__slider .my-slide {
-	height: 100%;
-}
-
-.about__slider .slick-list{
-	height: 100%;
-}
 
 .about__slider .slick-slide{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	max-width: 100%;
-
-
 }
-.about__slider .my-slide{
-
-}
-
-.about__slider .my-slide a {
+.about__slider a{
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	height: 100%;
 	width: 100%;
-	z-index: 1;
 }
-.about__slider .slick-arrow{
-	position: absolute;
-	margin: -20px 0px 0px 0px;
-	top: 50%;
-	z-index: 11 ;
-	font-size: 0px;
-	width: 40px;
-	height: 40px;
-	color: black;
-}
-.about__slider .slick-track{
-	height: 100%;
-	align-items: center;
-	justify-content: center;
+.about__slider img{
+	width: 200px;
+	min-width: 200px;
 }
