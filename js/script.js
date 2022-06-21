@@ -166,7 +166,19 @@ jQuery(function ($) {
 		],
 		loop: false,
 		arrows: true,
-		infobar: false,
+		infobar: true,
+
+	});
+	$('[data-fancybox="reviews"]').fancybox({
+		buttons: [
+			"slideShow",
+			"thumbs",
+			"zoom",
+			"fullScreen",
+		],
+		loop: false,
+		arrows: true,
+		infobar: true,
 
 	});
 
