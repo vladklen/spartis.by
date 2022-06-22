@@ -2072,11 +2072,11 @@ fieldset {
 }
 .slick-arrow.slick-prev{
 	left: 0px;
-	background: url('/icons/arrow-left.svg') 0 0 / 100% no-repeat;
+	background:  url('../icons/arrow-left.svg') 0 0 / 100% no-repeat;
 }
 .slick-arrow.slick-next{
 	right: 0px;
-	background: url('/icons/arrow-right.svg') 0 0 / 100% no-repeat;;
+	background:  url('../icons/arrow-right.svg') 0 0 / 100% no-repeat;
 }
 .slick-dots{
 	display: flex;
