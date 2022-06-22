@@ -1376,14 +1376,14 @@ fieldset {
 }
 .object__head img{
 	position: absolute;
-	min-width: 1440px;
+	max-width: 1920px;
+	width: 100vw;
 	left: 50%;
 	height: 100%;
 	transform: translateX(-50%);
 	object-fit: cover;
 	opacity: 0.3;
 	z-index: 1;
-	overflow: hidden;
 }
 .object__title {
 	width: 100%;
@@ -1434,12 +1434,12 @@ fieldset {
 .object__head._animation div:nth-child(3){
 	transform: translate(0px, 0px);
    opacity: 1;
-   transition: all 1s ease 0.4s;
+   transition: all 1s ease 0.3s;
 }
 .object__head._animation div:nth-child(4){
 	transform: translate(0px, 0px);
    opacity: 1;
-   transition: all 1s ease 0.6s;
+   transition: all 1s ease 0.4s;
 }
 @media (max-width:768px){
 	.object__head{

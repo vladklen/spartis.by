@@ -146,7 +146,7 @@ jQuery(function ($) {
 			]
 		});
 	}
-	$('[data-fancybox="object1"]').fancybox({
+	$('[data-fancybox="object"]').fancybox({
 		buttons: [
 			"slideShow",
 			"thumbs",
@@ -155,7 +155,9 @@ jQuery(function ($) {
 		],
 		loop: false,
 		arrows: true,
-		infobar: false,
+		infobar: true,
+		buttons: true,
+		slideShow: true,
 	});
 
 	$('[data-fancybox="certificates"]').fancybox({
@@ -168,6 +170,8 @@ jQuery(function ($) {
 		loop: false,
 		arrows: true,
 		infobar: true,
+		buttons: true,
+		slideShow: true,
 
 	});
 	$('[data-fancybox="reviews"]').fancybox({
@@ -180,6 +184,8 @@ jQuery(function ($) {
 		loop: false,
 		arrows: true,
 		infobar: true,
+		buttons: true,
+		slideShow: true,
 
 	});
 
