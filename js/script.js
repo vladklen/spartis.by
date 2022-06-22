@@ -55,17 +55,11 @@ if (animItems.length > 0) {
 		animOnScroll();
 	}, 300);
 }
-// для галлереи
-
 
 
 
 // JQuerry
 jQuery(function ($) {
-	if ($) {
-		console.log("jQuery start");
-	}
-
 	if ($(".main__slider").length > 0) {
 		$('.main__slider').slick({
 			dots: true,
@@ -90,7 +84,8 @@ jQuery(function ($) {
 					settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2,
-						arrows: false,
+						arrows: true,
+						dots: false,
 					}
 				},
 				{
