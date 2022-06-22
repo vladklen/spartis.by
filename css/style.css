@@ -1823,16 +1823,20 @@ fieldset {
 
 }
 @media (max-width:480px){
- .about-job__content{
+	.about-job__content{
 	flex-direction: column;
- }
- .about-job__images{
+	}
+	.about-job__images{
 	flex-direction: row;
 	order: 1;
-}
- .about-job__image{
+	}
+	.about-job__image{
 	 height:100px;
- }
+	}
+	.about-job-bg {
+	background: url(../img/about/about-bg.jpg) 50% 0px;
+	background-size: cover;
+}
 }
 
 /* !-------------------REVIEWS------------------------------- */
