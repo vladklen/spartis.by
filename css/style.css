@@ -709,7 +709,7 @@ fieldset {
 	align-items: center;
 }
 .modal__content{
-	height: calc(100vh - 20px);
+	min-height: calc(100vh - 20px);
 	background-color: #fff;
 	max-width: 500px;
 	box-sizing: border-box;
