@@ -65,18 +65,7 @@ jQuery(function ($) {
 	if ($) {
 		console.log("jQuery start");
 	}
-	$('[data-fancybox="object1"]').fancybox({
-		buttons: [
-			"slideShow",
-			"thumbs",
-			"zoom",
-			"fullScreen",
-		],
-		loop: false,
-		arrows: true,
-		infobar: false,
 
-	});
 	if ($(".main__slider").length > 0) {
 		$('.main__slider').slick({
 			dots: true,
@@ -157,6 +146,18 @@ jQuery(function ($) {
 			]
 		});
 	}
+	$('[data-fancybox="object1"]').fancybox({
+		buttons: [
+			"slideShow",
+			"thumbs",
+			"zoom",
+			"fullScreen",
+		],
+		loop: false,
+		arrows: true,
+		infobar: false,
+	});
+
 	$('[data-fancybox="certificates"]').fancybox({
 		buttons: [
 			"slideShow",
