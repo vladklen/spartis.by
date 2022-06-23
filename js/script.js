@@ -1,3 +1,4 @@
+const animItems = document.querySelectorAll('._anim-items');
 // Preloader
 window.onload = function () {
 	document.body.classList.add('loaded_hiding');
@@ -5,23 +6,7 @@ window.onload = function () {
 		document.body.classList.add('loaded');
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
-}
-
-// Burger
-const burger = document.querySelector(".header__burger");
-const menyBurger = document.querySelector(".header__menu");
-const bodyLock = document.querySelector("body");
-
-burger.onclick = function () {
-	burger.classList.toggle("active");
-	menyBurger.classList.toggle("active");
-	bodyLock.classList.toggle("lock");
-}
-
-// Код для анимациии при прокрутке страницы
-
-const animItems = document.querySelectorAll('._anim-items');
-window.onload = function () {
+	// Код для анимациии при прокрутке страницы
 	if (animItems.length > 0) {
 		window.addEventListener('scroll', animOnScroll);
 		function animOnScroll() {
@@ -53,9 +38,26 @@ window.onload = function () {
 		}
 		setTimeout(() => {
 			animOnScroll();
-		}, 900);
-	}
-};
+		}, 800);
+	};
+}
+
+// Burger
+const burger = document.querySelector(".header__burger");
+const menyBurger = document.querySelector(".header__menu");
+const bodyLock = document.querySelector("body");
+
+burger.onclick = function () {
+	burger.classList.toggle("active");
+	menyBurger.classList.toggle("active");
+	bodyLock.classList.toggle("lock");
+}
+
+// Код для анимациии при прокрутке страницы
+
+
+
+
 
 
 
