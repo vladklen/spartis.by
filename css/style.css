@@ -1849,7 +1849,6 @@ fieldset {
 	grid-auto-rows: 144px;
 	gap: 5px;
 	grid-auto-flow: dense;
-	overflow: hidden;
 }
 .review{
 	height: 100%;
