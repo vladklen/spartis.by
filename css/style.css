@@ -1586,6 +1586,7 @@ fieldset {
 	text-align: center;
 }
 .tech-spec__table table{
+	opacity: 0;
 	max-width: 945px;
 	min-width:280px;
 	padding: 10px;
@@ -1597,6 +1598,7 @@ fieldset {
 }
 .tech-spec__table._animation table{
 	animation: 2s ease table-animation ;
+	opacity: 1;
 }
 @keyframes table-animation{
 	0% {
@@ -1669,6 +1671,16 @@ fieldset {
 		border: 1px solid black;
 		width: 50%;
 		padding: 5px;
+	}
+	.rent__gallery .card__item:nth-child(4){
+		transform: translate(120%, 0px);
+		opacity: 1;
+		transition: all 0.8s ease 0s;
+	}
+	.rent__gallery._animation > .card__item{
+		transform: translate(0px, 0px);
+		opacity: 1;
+		transition: all 1s ease 0.5s;
 	}
 	td>p{
 		font-size: 0.8rem;
