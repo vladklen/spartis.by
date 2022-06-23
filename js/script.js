@@ -53,7 +53,7 @@ window.onload = function () {
 		}
 		setTimeout(() => {
 			animOnScroll();
-		}, 800);
+		}, 2800);
 	}
 };
 
