@@ -20,9 +20,8 @@ burger.onclick = function () {
 
 // Код для анимациии при прокрутке страницы
 
-const animItems = document.querySelectorAll('._anim-items');
-
-if (animItems.length > 0) {
+const animItems = document.querySelectorAll('loaded');
+if (animItems.length > 0 & body.classList.contains('active')) {
 	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
@@ -53,8 +52,9 @@ if (animItems.length > 0) {
 	}
 	setTimeout(() => {
 		animOnScroll();
-	}, 800);
+	}, 500);
 };
+
 
 
 
