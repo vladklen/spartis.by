@@ -2022,7 +2022,7 @@ fieldset {
 /* *-------------------Slider------------------------------ */
 /* !-------------------Slider------------------------------ */
 .my-slide {
-	height: 300px;
+	height: 350px;
 	font-size: 54px;
 	color: #fff;
 	text-align: center;
@@ -2070,7 +2070,7 @@ fieldset {
 }
 .slick-track{
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	width: 100%;
 }
 .main__slider .slick-slide{
@@ -2126,7 +2126,7 @@ fieldset {
 	width: 100%;
 }
 .about__slider img{
-	width: 200px;
+	width: 240px;
 	min-width: 200px;
 }
 /* !-------------------FOOTER------------------------------- */
