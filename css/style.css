@@ -1421,12 +1421,12 @@ fieldset {
 	object-fit: cover;
 }
 .object__head>*{
-	transform: translate(0px, 120%);
-   opacity: 0;
+	/* transform: translate(0px, 120%); */
+   opacity: 1;
    transition: all 0.8s ease 0s;
 	
 }
-.object__head._animation div:nth-child(2){
+/* .object__head._animation div:nth-child(2){
 	transform: translate(0px, 0px);
    opacity: 1;
    transition: all 1s ease 0.2s;
@@ -1440,7 +1440,7 @@ fieldset {
 	transform: translate(0px, 0px);
    opacity: 1;
    transition: all 1s ease 0.4s;
-}
+} */
 @media (max-width:768px){
 	.object__head{
 		height: calc(100% - 80px);
