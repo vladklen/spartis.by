@@ -2052,7 +2052,7 @@ fieldset {
 	padding: 20px 0;
 	position: relative;
 	z-index: 1;
-	padding: 0px 50px;
+	/* padding: 0px 50px; */
  }
 
 .slide__gradient{
@@ -2070,7 +2070,7 @@ fieldset {
 }
 .slick-track{
 	display: flex;
-	gap: 5px;
+	gap: 20px;
 	width: 100%;
 }
 .main__slider .slick-slide{
@@ -2087,11 +2087,11 @@ fieldset {
 	color: white;
 }
 .slick-arrow.slick-prev{
-	left: 0px;
+	left: -45px;
 	background:  url('../icons/arrow-left.svg') 0 0 / 100% no-repeat;
 }
 .slick-arrow.slick-next{
-	right: 0px;
+	right: -45px;
 	background:  url('../icons/arrow-right.svg') 0 0 / 100% no-repeat;
 }
 .slick-dots{
@@ -2115,6 +2115,18 @@ fieldset {
 	height: 10px;
 	border-radius: 50%;
 	background-color: white;
+}
+@media (max-width:768px) {
+	
+	.slick-track{
+		gap: 10px;
+	}
+	.slick-arrow.slick-prev{
+		left: 0px;
+	}
+	.slick-arrow.slick-next{
+		right: 0px;
+	}
 }
 /*                                 About sliders                           */
 
