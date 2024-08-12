@@ -1,5 +1,17 @@
 <?php
 
+function debug_to_console($data) {
+	$output = $data;
+	if (is_array($output))
+			$output = implode(',', $output);
+
+	echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
+
+debug_to_console("Test");
+
+ini_set('display_errors', 1);
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -9,6 +21,7 @@ require 'phpmailer/src/PHPMailer.php';
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
+$mail->isHTML(true)
 
 
 $mail->setFrom('info@spartis.by','Website');
@@ -32,6 +45,7 @@ if(trim(!empty($_POST['tel']))){
 if(trim(!empty($_POST['textarea']))){
 	$body.='<p>Запрос: ' .$_POST['textarea'].'</p>'
 }
+
 $mail->Body = $body
 
 if(!$mail->send(){

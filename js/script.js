@@ -1,3 +1,4 @@
+'use strict';
 // Preloader
 
 window.onload = function () {
@@ -22,20 +23,11 @@ burger.onclick = function () {
 
 const form = document.querySelector('#form');
 
-// const user = document.getElementById('username');
-// const mail = document.getElementById('mail');
-// const phone = document.getElementById('tel');
-// const text = document.getElementById('textarea');
-
 form.addEventListener('submit', formSend);
 
 async function formSend(e) {
   e.preventDefault();
-
   let formData = new FormData(form);
-  // for (let [key, value] of formData) {
-  //   console.log(`${key} — ${value}`);
-  // }
 
   form.classList.add('sending');
   let response = await fetch('sendmail.php', {
@@ -52,8 +44,6 @@ async function formSend(e) {
     alert('Ошибка отправки данных');
     form.classList.remove('sending');
   }
-
-  console.log(formData);
 }
 
 // Код для анимациии при прокрутке страницы
