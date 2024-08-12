@@ -20,13 +20,12 @@ burger.onclick = function () {
 };
 // Отправка формы
 
-const form = document.querySelector('.feedback__form');
+const form = document.querySelector('#form');
 
-console.log(form);
-const user = document.getElementById('username');
-const mail = document.getElementById('mail');
-const phone = document.getElementById('tel');
-const text = document.getElementById('textarea');
+// const user = document.getElementById('username');
+// const mail = document.getElementById('mail');
+// const phone = document.getElementById('tel');
+// const text = document.getElementById('textarea');
 
 form.addEventListener('submit', formSend);
 
@@ -34,6 +33,9 @@ async function formSend(e) {
   e.preventDefault();
 
   let formData = new FormData(form);
+  // for (let [key, value] of formData) {
+  //   console.log(`${key} — ${value}`);
+  // }
 
   form.classList.add('sending');
   let response = await fetch('sendmail.php', {
