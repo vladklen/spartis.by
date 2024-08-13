@@ -30,7 +30,7 @@ async function formSend(e) {
   let formData = new FormData(form);
 
   form.classList.add('sending');
-  let response = await fetch('../sendmail.php', {
+  let response = await fetch('./sendmail.php', {
     method: 'POST',
     body: formData,
   });

@@ -1,16 +1,18 @@
 <?php
 
-function debug_to_console($data) {
-	$output = $data;
-	if (is_array($output))
-			$output = implode(',', $output);
+// function debug_to_console($data) {
+// 	$output = $data;
+// 	if (is_array($output))
+// 			$output = implode(',', $output);
 
-	echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-}
+// 	echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+// }
 
-debug_to_console("Test");
+// debug_to_console("Test");
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
+
+include('phpmailer/PHPMailerAutoload.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -21,7 +23,7 @@ require 'phpmailer/src/PHPMailer.php';
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
-$mail->isHTML(true)
+$mail->IsHTML(true)
 
 
 $mail->setFrom('info@spartis.by','Website');
@@ -48,15 +50,15 @@ if(trim(!empty($_POST['textarea']))){
 
 $mail->Body = $body
 
-if(!$mail->send(){
+if(!$mail->send()){
 	$message = "Error";
-}) else {
+} else {
 	$message = "Send data"
 }
 
-$response = ['message'=> $message];
+$response = ['message' => $message];
 
-header('Contenet-type: application/json');
+header('Content-type: application/json');
 echo json_encode($response)
 
 ?>
