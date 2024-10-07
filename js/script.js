@@ -23,26 +23,28 @@ burger.onclick = function () {
 
 const form = document.querySelector('#form');
 
-form.addEventListener('submit', formSend);
+if (form) {
+  form.addEventListener('submit', formSend);
 
-async function formSend(e) {
-  e.preventDefault();
-  let formData = new FormData(form);
+  async function formSend(e) {
+    e.preventDefault();
+    let formData = new FormData(form);
 
-  form.classList.add('sending');
-  let response = await fetch('../sendmail.php', {
-    method: 'POST',
-    body: formData,
-  });
+    form.classList.add('sending');
+    let response = await fetch('../sendmail.php', {
+      method: 'POST',
+      body: formData,
+    });
 
-  if (response.ok) {
-    let result = await response.json();
-    alert(result.message);
-    form.reset();
-    form.classList.remove('sending');
-  } else {
-    alert('Ошибка отправки данных');
-    form.classList.remove('sending');
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message);
+      form.reset();
+      form.classList.remove('sending');
+    } else {
+      alert('Ошибка отправки данных');
+      form.classList.remove('sending');
+    }
   }
 }
 

@@ -1,343 +1,333 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Аренда опалубки</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/ico" href="./img/favicon.ico">
-	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="css/icons.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Аренда опалубки</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date();
-			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(91157595, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/91157595" style="position: absolute; left: -9999px" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
 
-		ym(91157595, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/91157595" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
-</head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="index.html" class="header__logo">
+              <img src="img/Logo.svg" alt="Spartis logo" title="Spartis" />
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__button">
+                  <a class="button__link" href="about.html">Услуги</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="header__button _active-page">
+                  <a href="rent.html" class="button__link">Аренда</a>
 
-<body>
-	<div class="preloader">
-		<div class="preloader__content">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-	<div class="wrapper">
-		<header id="header" class="header">
-			<div class="container">
-				<div class="header__body">
-					<a href="index.html" class="header__logo">
-						<img src="img/Logo.svg" alt="Spartis logo" title="Spartis">
-					</a>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li class="header__button">
-								<a class="button__link" href="about.html">Услуги</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="header__button _active-page">
-								<a href="rent.html" class="button__link">Аренда</a>
-
-								<span class="button__line button__line_bottom"></span>
-
-							</li>
-							<li class="header__button">
-								<a href="objects.html" class="button__link">Объекты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="header__button">
-								<a href="reviews.html" class="button__link">Отзывы</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="header__button">
-								<a href="contacts.html" class="button__link">Контакты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__tel _icon-phone">
-						<a href="tel:+375296767209" class="button__link ">+375(29)676-72-09</a>
-						<span class="button__line button__line_bottom"></span>
-					</div>
-					<div class="header__burger">
-						<span></span>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main class="main">
-			<div class="container">
-				<div class="rent__title title _anim-items _anim-stop">
-					<H2>Опорные леса (башни) Hunnebeck ID15</H2>
-				</div>
-				<div class="rent">
-					<div class="rent__info _anim-items _anim-stop">
-						<p>Рамная опора ID15 фирмы HUNNEBECK представляет собой несущую башенную опору с системными
-							размерами 1,0м и 1,0м в горизонтальной проекции. Для сооружения башни любой требюуемой высоты
-							достаточно всего шести различных серийных компонентов. В зависимости от высоты, башенные
-							опоры могут собираться из рам 100, рам 133, либо с использованием комбинаций этих рам и
-							дополнительных элементов.</p>
-						<p>При этом могут сооружаться башни произвольной высоты, поскольку 33-сантиметровый растр
-							перекрывается ходом винтов головок и ножек. Все детали оцинкованы горячим способом и обладают
-							высокой прочностью. Масса с учетом винтовых ножек и головок состовляет примерно 42кг/пог.м
-							(по высоте).</p>
-						<p>Шарнирно-закрепленные опорные пластины винтовых головок и ножек обеспечивают согласование с
-							наклоном до 6%. Общий диапазон регулировки винотов составляет 59,8 см. Стойки выполнены из
-							труб внешним диаметром 48,3 мм, что позволяет использовать любые распространенные
-							соединительные элементы каркасов.</p>
-					</div>
-					<div class="rent__photos">
-						<div class="rent__gallery _anim-items _anim-stop">
-							<div class="card__item">
-								<h4>Высота от 1.42м до 20.10м</h4>
-								<div class="card_image">
-									<div class="gradient"></div>
-									<img class="image_bg" src="img/rent/hun1.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-							<div class="card__item horizontal">
-								<div class="card_image">
-									<img class="image_bg" src="img/rent/hun2.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-							<div class="card__item horizontal">
-								<div class="card_image">
-									<img class="image_bg" src="img/rent/hun3.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-							<div class="card__item">
-								<h4>Несущая способность 180кН на башню</h4>
-								<div class="card_image">
-									<div class="gradient"></div>
-									<img class="image_bg" src="img/rent/hun4.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-							<div class="card__item">
-								<h4>Система быстрого монтажа</h4>
-								<div class="card_image">
-									<div class="gradient"></div>
-									<img class="image_bg" src="img/rent/hun5.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-							<div class="card__item horizontal">
-								<div class="card_image">
-									<img class="image_bg" src="img/rent/hun6.jpg" alt="Опалубка в аренду">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tech-spec title _anim-items _anim-stop">
-					<H2>Технические характеристики</H2>
-				</div>
-				<div class="tech-spec__table _anim-items _anim-stop">
-					<table>
-						<tr>
-							<td>
-								<p>Размеры основания</p>
-							</td>
-							<td>
-								<p>100х100 см</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Высота элемента (рамы)</p>
-							</td>
-							<td>
-								<p>100/133 см</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Высота применения</p>
-							</td>
-							<td>
-								<p>от 1.42м до 20.10м</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Средний вес</p>
-							</td>
-							<td>
-								<p>42кг - 1м по вертикали</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Максимальная грузоподъемность</p>
-							</td>
-							<td>
-								<p>180кн( 1 башня)</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Срок монтажа/Демонтажа</p>
-							</td>
-							<td>
-								<p>Прим. 0,17ч - 1 верт.м/0,34ч - 1 верт. м</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Особенности</p>
-							</td>
-							<td>
-								<p>Сборка в горизонтальном и в вертикальном положениии. Быстрое перемещение башен краном</p>
-							</td>
-						</tr>
-
-					</table>
-				</div>
-				<div class="feedback">
-					<div class="feedback__content">
-						<div class="feedback__title title _anim-items _anim-stop">
-							<h2>Оставьте заявку и мы просчитаем Вам стоимость аренды опалубки</h2>
-						</div>
-						<div class="feedback__subtitle subtitle">
-							<p>Наши специалисты свяжутся с вами в ближайшее время.</p>
-						</div>
-						<div class="feedback__button">
-							<a href="#popup" class="feedback__modal-btn white-button">Оставить заявку</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<nav class="footer__menu">
-						<ul class="footer__list">
-							<li class="footer__link">
-								<a class="footer__item" href="about.html">Услуги</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="rent.html">Аренда</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="objects.html">Объекты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="reviews.html">Отзывы</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="contacts.html">Контакты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer__social">
-						<ul class="social__list">
-							<li class="social__link">
-								<a href="viber://chat?number=%2B375296767209" class=" social__item _icon-viber"
-									target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href=# target="_blank" class="social__item _icon-instagram"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="copyright">
-						<p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Модальное окно -->
-		<div id="popup" class="modal">
-			<a href="#header" class="modal__area"></a>
-			<div class="modal__body">
-				<div class="modal__content">
-					<a href="#header" class="modal__close _icon-close"></a>
-					<form class="feedback__form">
-						<fieldset>
-							<div class="form__body">
-								<div class="form__header">
-									<h2>Заявка на расчет стоимости</h2>
-								</div>
-								<div class="form-item">
-									<div class="form-item__el">
-										<input id="username" name="username" placeholder="Ваше имя или Организация" type="text"
-											class="form-item__input-area" required>
-									</div>
-								</div>
-								<div class="form-item">
-									<div class="form-item__el">
-										<input id="mail" name="mail" placeholder="Ваша электронная почта" type="email"
-											class="form-item__input-area" pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required>
-									</div>
-								</div>
-								<div class="form-item">
-									<div class="form-item__el">
-										<input id="tel" name="tel" placeholder="Номер телефона +375(29)1111111" type="tel"
-											class="form-item__input-area" pattern="+375[0-9]{9}" required>
-									</div>
-								</div>
-								<div class="form-item">
-									<div class="form-item__el">
-										<textarea placeholder="Текст Сообщения" id="textarea" name="textarea"
-											class="form-item__text-area"
-											style="resize: none; min-height: 140px; max-height: 140px;"></textarea>
-									</div>
-								</div>
-								<p>
-									Пришлите нам запрос и мы свяжемся с Вами в ближайшее время. Вы также можете набрать нам по
-									телефону <br> +375 (29) 676-72-09
-								</p>
-								<div class="form-item">
-									<div class="form-item__button">
-										<button id="accept" name="accept" class="black-button">Оставить заявку</button>
-									</div>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/slick.js"></script>
-	<script src="js/fancybox/jquery.fancybox.js"></script>
-</body>
-
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="header__button">
+                  <a href="objects.html" class="button__link">Объекты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="header__button">
+                  <a href="reviews.html" class="button__link">Отзывы</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="header__button">
+                  <a href="contacts.html" class="button__link">Контакты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__tel _icon-phone">
+              <a href="tel:+375296767209" class="button__link">+375(29)676-72-09</a>
+              <span class="button__line button__line_bottom"></span>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="rent__title title _anim-items _anim-stop">
+            <h2>Опорные леса (башни) Hunnebeck ID15</h2>
+          </div>
+          <div class="rent">
+            <div class="rent__info _anim-items _anim-stop">
+              <p>
+                Рамная опора ID15 фирмы HUNNEBECK представляет собой несущую башенную опору с системными размерами 1,0м и 1,0м в горизонтальной проекции. Для сооружения башни любой требюуемой высоты достаточно всего шести различных серийных компонентов. В зависимости от высоты, башенные опоры могут собираться из рам 100, рам 133, либо с использованием комбинаций этих рам и дополнительных
+                элементов.
+              </p>
+              <p>При этом могут сооружаться башни произвольной высоты, поскольку 33-сантиметровый растр перекрывается ходом винтов головок и ножек. Все детали оцинкованы горячим способом и обладают высокой прочностью. Масса с учетом винтовых ножек и головок состовляет примерно 42кг/пог.м (по высоте).</p>
+              <p>Шарнирно-закрепленные опорные пластины винтовых головок и ножек обеспечивают согласование с наклоном до 6%. Общий диапазон регулировки винотов составляет 59,8 см. Стойки выполнены из труб внешним диаметром 48,3 мм, что позволяет использовать любые распространенные соединительные элементы каркасов.</p>
+            </div>
+            <div class="rent__photos">
+              <div class="rent__gallery _anim-items _anim-stop">
+                <div class="card__item">
+                  <h4>Высота от 1.42м до 20.10м</h4>
+                  <div class="card_image">
+                    <div class="gradient"></div>
+                    <img class="image_bg" src="img/rent/hun1.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+                <div class="card__item horizontal">
+                  <div class="card_image">
+                    <img class="image_bg" src="img/rent/hun2.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+                <div class="card__item horizontal">
+                  <div class="card_image">
+                    <img class="image_bg" src="img/rent/hun3.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+                <div class="card__item">
+                  <h4>Несущая способность 180кН на башню</h4>
+                  <div class="card_image">
+                    <div class="gradient"></div>
+                    <img class="image_bg" src="img/rent/hun4.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+                <div class="card__item">
+                  <h4>Система быстрого монтажа</h4>
+                  <div class="card_image">
+                    <div class="gradient"></div>
+                    <img class="image_bg" src="img/rent/hun5.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+                <div class="card__item horizontal">
+                  <div class="card_image">
+                    <img class="image_bg" src="img/rent/hun6.jpg" alt="Опалубка в аренду" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-spec title _anim-items _anim-stop">
+            <h2>Технические характеристики</h2>
+          </div>
+          <div class="tech-spec__table _anim-items _anim-stop">
+            <table>
+              <tr>
+                <td>
+                  <p>Размеры основания</p>
+                </td>
+                <td>
+                  <p>100х100 см</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Высота элемента (рамы)</p>
+                </td>
+                <td>
+                  <p>100/133 см</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Высота применения</p>
+                </td>
+                <td>
+                  <p>от 1.42м до 20.10м</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Средний вес</p>
+                </td>
+                <td>
+                  <p>42кг - 1м по вертикали</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Максимальная грузоподъемность</p>
+                </td>
+                <td>
+                  <p>180кн( 1 башня)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Срок монтажа/Демонтажа</p>
+                </td>
+                <td>
+                  <p>Прим. 0,17ч - 1 верт.м/0,34ч - 1 верт. м</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Особенности</p>
+                </td>
+                <td>
+                  <p>Сборка в горизонтальном и в вертикальном положениии. Быстрое перемещение башен краном</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="feedback">
+            <div class="feedback__content">
+              <div class="feedback__title title _anim-items _anim-stop">
+                <h2>Оставьте заявку и мы просчитаем Вам стоимость аренды опалубки</h2>
+              </div>
+              <div class="feedback__subtitle subtitle">
+                <p>Наши специалисты свяжутся с вами в ближайшее время.</p>
+              </div>
+              <div class="feedback__button">
+                <a href="#popup" class="feedback__modal-btn white-button">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__link">
+                  <a class="footer__item" href="about.html">Услуги</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="rent.html">Аренда</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="objects.html">Объекты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="reviews.html">Отзывы</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="contacts.html">Контакты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="social__list">
+                <li class="social__link">
+                  <a href="viber://chat?number=%2B375296767209" class="social__item _icon-viber" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="#" target="_blank" class="social__item _icon-instagram"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Модальное окно -->
+      <div id="popup" class="modal">
+        <a href="#header" class="modal__area"></a>
+        <div class="modal__body">
+          <div class="modal__content">
+            <a href="#header" class="modal__close _icon-close"></a>
+            <form action="#" id="form" class="feedback__form">
+              <fieldset>
+                <div class="form__body">
+                  <div class="form__header">
+                    <h2>Заявка на расчет стоимости</h2>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-item__el">
+                      <input id="username" name="username" placeholder="Ваше имя или Организация" type="text" class="form-item__input-area" required />
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-item__el">
+                      <input id="mail" name="mail" placeholder="Ваша электронная почта" type="email" class="form-item__input-area" pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required />
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-item__el">
+                      <input id="tel" name="tel" placeholder="Номер телефона +375(29)1111111" type="tel" class="form-item__input-area" pattern="+375[0-9]{9}" required />
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-item__el">
+                      <textarea placeholder="Текст Сообщения" id="textarea" name="textarea" class="form-item__text-area" style="resize: none; min-height: 140px; max-height: 140px"></textarea>
+                    </div>
+                  </div>
+                  <p>
+                    Пришлите нам запрос и мы свяжемся с Вами в ближайшее время. Вы также можете набрать нам по телефону <br />
+                    +375 (29) 676-72-09
+                  </p>
+                  <div class="form-item">
+                    <div class="form-item__button">
+                      <button id="accept" name="accept" class="black-button">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fancybox/jquery.fancybox.js"></script>
+  </body>
 </html>
