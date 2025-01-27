@@ -1,361 +1,299 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Услуги</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/ico" href="./img/favicon.ico">
-	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/icons.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Услуги</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date();
-			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(91157595, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/91157595" style="position: absolute; left: -9999px" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
 
-		ym(91157595, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/91157595" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
-</head>
-
-<body>
-	<div class="preloader">
-		<div class="preloader__content">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-	<div class="wrapper">
-		<header id="header" class="header">
-			<div class="container">
-				<div class="header__body">
-					<a href="index.html" class="header__logo">
-						<img src="img/Logo.svg" alt="Spartis logo" title="Spartis">
-					</a>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li class="header__button _active-page">
-								<a class="button__link" href="about.html">Услуги</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="header__button">
-								<a href="rent.html" class="button__link">Аренда</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="objects.html" class="button__link">Объекты</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="reviews.html" class="button__link">Отзывы</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="contacts.html" class="button__link">Контакты</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__tel _icon-phone">
-						<a href="tel:+375296767209" class="button__link ">+375(29)676-72-09</a>
-						<span class="button__line button__line_bottom"></span>
-					</div>
-					<div class="header__burger">
-						<span></span>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main class="main">
-			<div class="container">
-				<div class="about__title title">
-					<H2>Строительные работы
-						любой сложности:</H2>
-				</div>
-				<div class="about">
-					<div class="about__info info _anim-items _anim-stop">
-						<p>За 30 лет на рынке ООО “СПАРТИС” реализовало более 100 объектов различной степени сложности.
-						</p>
-						<p>На всех этапах строительных и монтажных работ ООО «СПАРТИС» уделяет особое внимание к деталям и
-							пожеланиям заказчиков. В каждом рабочем моменте ООО «СПАРТИС» умеет находить нестандартные и
-							эффективные методы решения различных задач,предлагать лучшие варианты реализации проектов в
-							заданных условиях рынка, чтобы обеспечить качественный конечный результат.
-						</p>
-						<p>Строительные объекты. ООО «СПАРТИС» полностью отвечают планам и индивидуальным запросам заказчиков,
-							в которых воплощается строительный опыт и профессионализм членов нашей команды, что подтверждается
-							многочисленными положительными отзывами заказчиков.
-						</p>
-					</div>
-					<div class=" about__photos">
-						<div class="about__gallery _anim-items _anim-stop">
-							<div class="about__item">
-								<img class="image_bg" src="img/about/head-img-1.jpg" alt="Фоновое изображение">
-							</div>
-							<div class="about__item">
-								<img class="image_bg" src="img/about/head-img-2.jpg" alt="Фоновое изображение">
-							</div>
-							<div class="about__item">
-								<img class="image_bg" src="img/about/head-img-3.jpg" alt="Фоновое изображение">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="about-job title">
-					<H2>Перечень выполняемых работ</H2>
-				</div>
-				<div class="about-job__content">
-					<div class="about-job__images _anim-items _anim-stop">
-						<div class="about-job__image">
-							<img class="image_bg" src="img/about/jobs1.jpg" alt="Проектные работы">
-						</div>
-						<div class="about-job__image">
-							<img class="image_bg" src="img/about/jobs2.jpg"
-								alt="Устройство монолитных перекрытий высотой выше 3м">
-						</div>
-					</div>
-					<div class="about-job__list">
-						<ul class="job__list">
-							<li class="job__item">земляные работы</li>
-							<li class="job__item">устройство фундаментов</li>
-							<li class="job__item">возведение монолитных бетонных и железобетонных конструкций</li>
-							<li class="job__item">монтаж легких ограждающих конструкций</li>
-							<li class="job__item">устройство каменных и армокаменных конструкций</li>
-							<li class="job__item">заполнение оконных и дверных проемов</li>
-							<li class="job__item">монтаж стальных конструкций</li>
-							<li class="job__item">устройство кровель</li>
-							<li class="job__item">устройство изоляционных покрытий</li>
-							<li class="job__item">устройство тепловой изоляции ограждающих конструкций здания</li>
-							<li class="job__item">устройство дорожных одежд с покрытием из плит тротуарных</li>
-							<li class="job__item">устройство полов</li>
-							<li class="job__item">электромонтажные работы</li>
-							<li class="job__item">монтаж внутренних инженерых систем</li>
-							<li class="job__item">монтаж наружных инженерных сетей</li>
-						</ul>
-					</div>
-					<div class="about-job-bg">
-					</div>
-				</div>
-				<div class="about-certificates title">
-					<H2>Аттестаты, Сертификаты</H2>
-				</div>
-				<div class="objects-slider__content">
-					<div class="main_slider-bg">
-					</div>
-					<div class="about__slider">
-						<div class="my-slide main__slide-01">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/Attestat/photo1.jpg">
-								<img src="img/certificates/Attestat/photo1.jpg" alt="Аттестат соответствия" title="Увеличить">
-							</a>
-						</div>
-						<div class="my-slide main__slide-02">
-
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/Attestat/photo2.jpg">
-								<img src="img/certificates/Attestat/photo2.jpg" alt="Аттестат соответствия" title="Увеличить">
-							</a>
-						</div>
-						<div class="my-slide main__slide-03">
-
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo1.jpg">
-								<img src="img/certificates/certificate/photo1.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-04">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo2.jpg">
-								<img src="img/certificates/certificate/photo2.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-05">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo3.jpg">
-								<img src="img/certificates/certificate/photo3.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-06">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo4.jpg">
-								<img src="img/certificates/certificate/photo4.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-07">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo5.jpg">
-								<img src="img/certificates/certificate/photo5.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-08">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo6.jpg">
-								<img src="img/certificates/certificate/photo6.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-09">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo7.jpg">
-								<img src="img/certificates/certificate/photo7.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-10">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo8.jpg">
-								<img src="img/certificates/certificate/photo7.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-11">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo9.jpg">
-								<img src="img/certificates/certificate/photo9.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-12">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo10.jpg">
-								<img src="img/certificates/certificate/photo10.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-13">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo11.jpg">
-								<img src="img/certificates/certificate/photo11.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-14">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo12.jpg">
-								<img src="img/certificates/certificate/photo12.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-15">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/certificate/photo12.jpg">
-								<img src="img/certificates/certificate/photo13.jpg" alt="Сертификат" title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-16">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/TechComp/photo1.jpg">
-								<img src="img/certificates/TechComp/photo1.jpg" alt="Техническая компетентность"
-									title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-17">
-							<a data-fancybox="certificates" data-caption="Сертификаты"
-								href="img/certificates/TechComp/photo2.jpg">
-								<img src="img/certificates/TechComp/photo2.jpg" alt="Техническая компетентность"
-									title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-18">
-							<a data-fancybox="certificates" href="img/certificates/TechComp/photo3.jpg">
-								<img src="img/certificates/TechComp/photo3.jpg" alt="Техническая компетентность"
-									title="Перейти">
-							</a>
-						</div>
-						<div class="my-slide main__slide-19">
-							<a data-fancybox="certificates" href="img/certificates/TechComp/photo4.jpg">
-								<img src="img/certificates/TechComp/photo4.jpg" alt="Техническая компетентность"
-									title="Перейти">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<nav class="footer__menu">
-						<ul class="footer__list">
-							<li class="footer__link">
-								<a class="footer__item" href="about.html">Услуги</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="rent.html">Аренда</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="objects.html">Объекты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="reviews.html">Отзывы</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="contacts.html">Контакты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer__social">
-						<ul class="social__list">
-							<li class="social__link">
-								<a href="viber://chat?number=%2B375296767209" class=" social__item _icon-viber"
-									target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href=# target="_blank" class="social__item _icon-instagram"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="copyright">
-						<p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/slick.js"></script>
-	<script src="js/fancybox/jquery.fancybox.js"></script>
-
-</body>
-
+  <body>
+    <div class="preloader">
+      <div class="preloader__content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="index.html" class="header__logo">
+              <img src="img/Logo.svg" alt="Spartis logo" title="Spartis" />
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__button _active-page">
+                  <a class="button__link" href="about.html">Услуги</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="header__button">
+                  <a href="rent.html" class="button__link">Аренда</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="objects.html" class="button__link">Объекты</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="reviews.html" class="button__link">Отзывы</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="contacts.html" class="button__link">Контакты</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__tel _icon-phone">
+              <a href="tel:+375296767209" class="button__link">+375(29)676-72-09</a>
+              <span class="button__line button__line_bottom"></span>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="about__title title">
+            <h2>Строительные работы любой сложности:</h2>
+          </div>
+          <div class="about">
+            <div class="about__info info _anim-items _anim-stop">
+              <p>За 30 лет на рынке ООО “СПАРТИС” реализовало более 100 объектов различной степени сложности.</p>
+              <p>На всех этапах строительных и монтажных работ ООО «СПАРТИС» уделяет особое внимание к деталям и пожеланиям заказчиков. В каждом рабочем моменте ООО «СПАРТИС» умеет находить нестандартные и эффективные методы решения различных задач,предлагать лучшие варианты реализации проектов в заданных условиях рынка, чтобы обеспечить качественный конечный результат.</p>
+              <p>Строительные объекты. ООО «СПАРТИС» полностью отвечают планам и индивидуальным запросам заказчиков, в которых воплощается строительный опыт и профессионализм членов нашей команды, что подтверждается многочисленными положительными отзывами заказчиков.</p>
+            </div>
+            <div class="about__photos">
+              <div class="about__gallery _anim-items _anim-stop">
+                <div class="about__item">
+                  <img class="image_bg" src="img/about/head-img-1.jpg" alt="Фоновое изображение" />
+                </div>
+                <div class="about__item">
+                  <img class="image_bg" src="img/about/head-img-2.jpg" alt="Фоновое изображение" />
+                </div>
+                <div class="about__item">
+                  <img class="image_bg" src="img/about/head-img-3.jpg" alt="Фоновое изображение" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-job title">
+            <h2>Перечень выполняемых работ</h2>
+          </div>
+          <div class="about-job__content">
+            <div class="about-job__images _anim-items _anim-stop">
+              <div class="about-job__image">
+                <img class="image_bg" src="img/about/jobs1.jpg" alt="Проектные работы" />
+              </div>
+              <div class="about-job__image">
+                <img class="image_bg" src="img/about/jobs2.jpg" alt="Устройство монолитных перекрытий высотой выше 3м" />
+              </div>
+            </div>
+            <div class="about-job__list">
+              <ul class="job__list">
+                <li class="job__item">земляные работы</li>
+                <li class="job__item">устройство фундаментов</li>
+                <li class="job__item">возведение монолитных бетонных и железобетонных конструкций</li>
+                <li class="job__item">монтаж легких ограждающих конструкций</li>
+                <li class="job__item">устройство каменных и армокаменных конструкций</li>
+                <li class="job__item">заполнение оконных и дверных проемов</li>
+                <li class="job__item">монтаж стальных конструкций</li>
+                <li class="job__item">устройство кровель</li>
+                <li class="job__item">устройство изоляционных покрытий</li>
+                <li class="job__item">устройство тепловой изоляции ограждающих конструкций здания</li>
+                <li class="job__item">устройство дорожных одежд с покрытием из плит тротуарных</li>
+                <li class="job__item">устройство полов</li>
+                <li class="job__item">электромонтажные работы</li>
+                <li class="job__item">монтаж внутренних инженерых систем</li>
+                <li class="job__item">монтаж наружных инженерных сетей</li>
+              </ul>
+            </div>
+            <div class="about-job-bg"></div>
+          </div>
+          <div class="about-certificates title">
+            <h2>Аттестаты, Сертификаты</h2>
+          </div>
+          <div class="objects-slider__content">
+            <div class="main_slider-bg"></div>
+            <div class="about__slider">
+              <div class="my-slide main__slide-01">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/Attestat/photo1.jpg">
+                  <img src="img/certificates/Attestat/photo1.jpg" alt="Аттестат соответствия" title="Увеличить" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-02">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/Attestat/photo2.jpg">
+                  <img src="img/certificates/Attestat/photo2.jpg" alt="Аттестат соответствия" title="Увеличить" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-03">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/Attestat/photo3.jpg">
+                  <img src="img/certificates/Attestat/photo3.jpg" alt="Аттестат соответствия" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-04">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/certificate/photo1.jpg">
+                  <img src="img/certificates/certificate/photo1.jpg" alt="Сертификат" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-05">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/certificate/photo2.jpg">
+                  <img src="img/certificates/certificate/photo2.jpg" alt="Сертификат" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-06">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/certificate/photo3.jpg">
+                  <img src="img/certificates/certificate/photo3.jpg" alt="Сертификат" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-07">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/certificate/photo4.jpg">
+                  <img src="img/certificates/certificate/photo4.jpg" alt="Сертификат" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-08">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo1.jpg">
+                  <img src="img/certificates/TechComp/photo1.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-09">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo2.jpg">
+                  <img src="img/certificates/TechComp/photo2.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-10">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo3.jpg">
+                  <img src="img/certificates/TechComp/photo3.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-11">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo4.jpg">
+                  <img src="img/certificates/TechComp/photo4.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-12">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo5.jpg">
+                  <img src="img/certificates/TechComp/photo5.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+              <div class="my-slide main__slide-13">
+                <a data-fancybox="certificates" data-caption="Сертификаты" href="img/certificates/TechComp/photo6.jpg">
+                  <img src="img/certificates/TechComp/photo6.jpg" alt="Техническая компетентность" title="Перейти" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__link">
+                  <a class="footer__item" href="about.html">Услуги</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="rent.html">Аренда</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="objects.html">Объекты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="reviews.html">Отзывы</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="contacts.html">Контакты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="social__list">
+                <li class="social__link">
+                  <a href="viber://chat?number=%2B375296767209" class="social__item _icon-viber" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="#" target="_blank" class="social__item _icon-instagram"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fancybox/jquery.fancybox.js"></script>
+  </body>
 </html>

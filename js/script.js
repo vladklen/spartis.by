@@ -25,6 +25,7 @@ const form = document.querySelector('#form');
 
 if (form) {
   form.addEventListener('submit', formSend);
+  const closeIcon = document.querySelector('.modal__close');
 
   async function formSend(e) {
     e.preventDefault();
@@ -41,9 +42,11 @@ if (form) {
       alert(result.message);
       form.reset();
       form.classList.remove('sending');
+      closeIcon.click();
     } else {
       alert('Ошибка отправки данных');
       form.classList.remove('sending');
+      closeIcon.click();
     }
   }
 }
