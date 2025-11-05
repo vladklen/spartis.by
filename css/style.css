@@ -1141,6 +1141,11 @@ fieldset {
   transition: all 0.2s ease 0s;
 }
 
+.objects__cards._animation .card__item:nth-child(19) {
+  transform: translate(0px, 0px);
+  transition: all 1s ease 0.1s;
+}
+
 .objects__cards._animation .card__item:nth-child(18) {
   transform: translate(0px, 0px);
   transition: all 1s ease 0.1s;
