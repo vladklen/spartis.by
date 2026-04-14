@@ -1,304 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Отзывы</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a));
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/ico" href="./img/favicon.ico">
-	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/icons.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Отзывы</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date();
-			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(91157595, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/91157595" style="position: absolute; left: -9999px" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
 
-		ym(91157595, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/91157595" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
-</head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="index.html" class="header__logo">
+              <img src="img/Logo.png" alt="Spartis logo" title="Spartis" />
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__button">
+                  <a class="button__link" href="about.html">Услуги</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="rent.html" class="button__link">Аренда</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="objects.html" class="button__link">Объекты</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button _active-page">
+                  <a href="reviews.html" class="button__link">Отзывы</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+                <li class="header__button">
+                  <a href="contacts.html" class="button__link">Контакты</a>
+                  <span class="button__line button__line_top"></span>
+                  <span class="button__line button__line_bottom"></span>
+                  <span class="button__line button__line_left"></span>
+                  <span class="button__line button__line_right"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__tel _icon-phone">
+              <a href="tel:+375296767209" class="button__link">+375(29)676-72-09</a>
+              <span class="button__line button__line_bottom"></span>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="reviews__title title">
+            <h2>Отзывы</h2>
+          </div>
+          <div class="reviews__content _anim-items">
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/1-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/DSMT.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>ОАО “Дорстроймонтажтрест”</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/10-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/MDSK.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>Минский домостроительный комбинат</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/18-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/BelPalata.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>БЕЛОРУСКАЯ ТОРГОВО- ПРОМЫШЛЕННАЯ ПАЛАТА</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/4-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/BGTU.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>Белорусский государственный технологический университет</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/2-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/BRail.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>МИНСКОЕ ОТДЕЛЕНИЕ БЕЛОРУССКОЙ ЖЕЛЕЗНОЙ ДОРОГИ</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/3-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/Minsk.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>МИНСКОЕ городской исполнительный комитет</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/15-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/Belavia.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>Государственная авиакомпания белавия</h4>
+              </div>
+            </div>
+            <div class="review">
+              <a data-fancybox="reviews" href="img/reviews/img/9-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__title">
+                <h4>УП “АУМ” Сороко В.И.</h4>
+              </div>
+            </div>
+            <div class="review">
+              <a data-fancybox="reviews" href="img/reviews/img/7-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__title">
+                <h4>ООО “АМП-техно логойск”</h4>
+              </div>
+            </div>
 
-<body>
-	<div class="preloader">
-		<div class="preloader__content">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-	<div class="wrapper">
-		<header id="header" class="header">
-			<div class="container">
-				<div class="header__body">
-					<a href="index.html" class="header__logo">
-						<img src="img/Logo.svg" alt="Spartis logo" title="Spartis">
-					</a>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li class="header__button">
-								<a class="button__link" href="about.html">Услуги</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="rent.html" class="button__link">Аренда</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="objects.html" class="button__link">Объекты</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button _active-page">
-								<a href="reviews.html" class="button__link">Отзывы</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-							<li class="header__button">
-								<a href="contacts.html" class="button__link">Контакты</a>
-								<span class="button__line button__line_top"></span>
-								<span class="button__line button__line_bottom"></span>
-								<span class="button__line button__line_left"></span>
-								<span class="button__line button__line_right"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__tel _icon-phone">
-						<a href="tel:+375296767209" class="button__link ">+375(29)676-72-09</a>
-						<span class="button__line button__line_bottom"></span>
-					</div>
-					<div class="header__burger">
-						<span></span>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main class="main">
-			<div class="container">
-				<div class="reviews__title title">
-					<H2>Отзывы</H2>
-				</div>
-				<div class="reviews__content _anim-items">
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/1-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/DSMT.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>ОАО “Дорстроймонтажтрест”</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/10-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/MDSK.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>Минский домостроительный
-								комбинат</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/18-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/BelPalata.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>БЕЛОРУСКАЯ ТОРГОВО-
-								ПРОМЫШЛЕННАЯ ПАЛАТА</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/4-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/BGTU.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>Белорусский
-								государственный технологический университет</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/2-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/BRail.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>МИНСКОЕ ОТДЕЛЕНИЕ
-								БЕЛОРУССКОЙ
-								ЖЕЛЕЗНОЙ ДОРОГИ</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/3-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/Minsk.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>МИНСКОЕ городской
-								исполнительный
-								комитет</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/15-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/Belavia.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>Государственная
-								авиакомпания
-								белавия</h4>
-						</div>
-					</div>
-					<div class="review">
-						<a data-fancybox="reviews" href="img/reviews/img/9-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__title">
-							<h4>УП “АУМ” Сороко В.И.</h4>
-						</div>
-					</div>
-					<div class="review">
-						<a data-fancybox="reviews" href="img/reviews/img/7-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__title">
-							<h4>ООО “АМП-техно логойск”</h4>
-						</div>
-					</div>
-
-					<div class="review">
-						<a data-fancybox="reviews" href="img/reviews/img/11-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__title">
-							<h4>ЗАО “ЖИЛПРОМСТРОЙ”</h4>
-						</div>
-					</div>
-					<div class="review">
-						<a data-fancybox="reviews" href="img/reviews/img/12-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__title">
-							<h4>ООО “ABB Индустри унд
-								Электротехник ГМБХ”</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/8-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/Belpharm.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>группа компаний
-								белфарм</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/19-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/BelVEB.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>БЕЛОРУССКИЙ
-								внешнеэкономический
-								банк</h4>
-						</div>
-					</div>
-					<div class="review vertical">
-						<a data-fancybox="reviews" href="img/reviews/img/17-min.jpg" title="Посмотреть отзыв"></a>
-						<div class="review__logo">
-							<img src="img/reviews/BelMuz.png" alt="логотип">
-						</div>
-						<div class="review__title">
-							<h4>БЕЛОРУССКАЯ
-								государственная академия
-								музыки</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<nav class="footer__menu">
-						<ul class="footer__list">
-							<li class="footer__link">
-								<a class="footer__item" href="about.html">Услуги</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="rent.html">Аренда</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="objects.html">Объекты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="reviews.html">Отзывы</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-							<li class="footer__link">
-								<a class="footer__item" href="contacts.html">Контакты</a>
-								<span class="button__line button__line_bottom"></span>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer__social">
-						<ul class="social__list">
-							<li class="social__link">
-								<a href="viber://chat?number=%2B375296767209" class=" social__item _icon-viber"
-									target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
-							</li>
-							<li class="social__link">
-								<a href=# target="_blank" class="social__item _icon-instagram"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="copyright">
-						<p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/slick.js"></script>
-	<script src="js/fancybox/jquery.fancybox.js"></script>
-</body>
-
+            <div class="review">
+              <a data-fancybox="reviews" href="img/reviews/img/11-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__title">
+                <h4>ЗАО “ЖИЛПРОМСТРОЙ”</h4>
+              </div>
+            </div>
+            <div class="review">
+              <a data-fancybox="reviews" href="img/reviews/img/12-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__title">
+                <h4>ООО “ABB Индустри унд Электротехник ГМБХ”</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/8-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/Belpharm.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>группа компаний белфарм</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/19-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/BelVEB.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>БЕЛОРУССКИЙ внешнеэкономический банк</h4>
+              </div>
+            </div>
+            <div class="review vertical">
+              <a data-fancybox="reviews" href="img/reviews/img/17-min.jpg" title="Посмотреть отзыв"></a>
+              <div class="review__logo">
+                <img src="img/reviews/BelMuz.png" alt="логотип" />
+              </div>
+              <div class="review__title">
+                <h4>БЕЛОРУССКАЯ государственная академия музыки</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__link">
+                  <a class="footer__item" href="about.html">Услуги</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="rent.html">Аренда</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="objects.html">Объекты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="reviews.html">Отзывы</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+                <li class="footer__link">
+                  <a class="footer__item" href="contacts.html">Контакты</a>
+                  <span class="button__line button__line_bottom"></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="social__list">
+                <li class="social__link">
+                  <a href="viber://chat?number=%2B375296767209" class="social__item _icon-viber" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://telegram.me/vladklen" class="social__item _icon-telegram" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="https://wa.me/375296767209" class="social__item _icon-whatsapp" target="_blank"></a>
+                </li>
+                <li class="social__link">
+                  <a href="#" target="_blank" class="social__item _icon-instagram"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p>ООО "СПАРТИС" &copy;2022. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fancybox/jquery.fancybox.js"></script>
+  </body>
 </html>

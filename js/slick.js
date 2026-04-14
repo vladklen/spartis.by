@@ -248,7 +248,7 @@
         {
           height: targetHeight,
         },
-        _.options.speed
+        _.options.speed,
       );
     }
   };
@@ -270,7 +270,7 @@
           },
           _.options.speed,
           _.options.easing,
-          callback
+          callback,
         );
       } else {
         _.$slideTrack.animate(
@@ -279,7 +279,7 @@
           },
           _.options.speed,
           _.options.easing,
-          callback
+          callback,
         );
       }
     } else {
@@ -311,7 +311,7 @@
                 callback.call();
               }
             },
-          }
+          },
         );
       } else {
         _.applyTransition();
@@ -710,7 +710,10 @@
     var _ = this;
 
     if (_.options.dots && _.$dots !== null) {
-      $('li', _.$dots).off('click.slick', _.changeSlide).off('mouseenter.slick', $.proxy(_.interrupt, _, true)).off('mouseleave.slick', $.proxy(_.interrupt, _, false));
+      $('li', _.$dots)
+        .off('click.slick', _.changeSlide)
+        .off('mouseenter.slick', $.proxy(_.interrupt, _, true))
+        .off('mouseleave.slick', $.proxy(_.interrupt, _, false));
 
       if (_.options.accessibility === true) {
         _.$dots.off('keydown.slick', _.keyHandler);
@@ -874,7 +877,7 @@
         },
         _.options.speed,
         _.options.easing,
-        callback
+        callback,
       );
     } else {
       _.applyTransition(slideIndex);
@@ -904,7 +907,7 @@
           zIndex: _.options.zIndex - 2,
         },
         _.options.speed,
-        _.options.easing
+        _.options.easing,
       );
     } else {
       _.applyTransition(slideIndex);
@@ -1157,7 +1160,7 @@
           index: parseInt(slide),
         },
       },
-      dontAnimate
+      dontAnimate,
     );
   };
 
@@ -1282,14 +1285,14 @@
         {
           message: 'previous',
         },
-        _.changeSlide
+        _.changeSlide,
       );
       _.$nextArrow.off('click.slick').on(
         'click.slick',
         {
           message: 'next',
         },
-        _.changeSlide
+        _.changeSlide,
       );
 
       if (_.options.accessibility === true) {
@@ -1308,7 +1311,7 @@
         {
           message: 'index',
         },
-        _.changeSlide
+        _.changeSlide,
       );
 
       if (_.options.accessibility === true) {
@@ -1317,7 +1320,9 @@
     }
 
     if (_.options.dots === true && _.options.pauseOnDotsHover === true && _.slideCount > _.options.slidesToShow) {
-      $('li', _.$dots).on('mouseenter.slick', $.proxy(_.interrupt, _, true)).on('mouseleave.slick', $.proxy(_.interrupt, _, false));
+      $('li', _.$dots)
+        .on('mouseenter.slick', $.proxy(_.interrupt, _, true))
+        .on('mouseleave.slick', $.proxy(_.interrupt, _, false));
     }
   };
 
@@ -1343,28 +1348,28 @@
       {
         action: 'start',
       },
-      _.swipeHandler
+      _.swipeHandler,
     );
     _.$list.on(
       'touchmove.slick mousemove.slick',
       {
         action: 'move',
       },
-      _.swipeHandler
+      _.swipeHandler,
     );
     _.$list.on(
       'touchend.slick mouseup.slick',
       {
         action: 'end',
       },
-      _.swipeHandler
+      _.swipeHandler,
     );
     _.$list.on(
       'touchcancel.slick mouseleave.slick',
       {
         action: 'end',
       },
-      _.swipeHandler
+      _.swipeHandler,
     );
 
     _.$list.on('click.slick', _.clickHandler);
@@ -1702,7 +1707,7 @@
             index: currentSlide,
           },
         },
-        false
+        false,
       );
     }
   };
